@@ -1,1 +1,42 @@
-<p>home works!</p>
+<!-- <p>home works!</p> -->
+<div class="home-wrapper">
+    <div class="home-title">
+        <h1 class="title">Successful Front-End Developer</h1>
+        <div style="display: flex;justify-content: center;    margin-top: 2rem;">
+            <p class="sub-title">Hi. I’m Vishal Panchidi, a freelance Front-end Developer with 4 years commercial experience
+                creating successful
+                websites.</p>
+        </div>
+      
+    </div>
+
+    <div style="display: flex; justify-content: center; margin-top: 3em;">
+        <ng-container *ngFor="let item of items">
+            <mat-card class="example-card">
+                <div style="display: flex; padding: 1.5em 1rem;justify-content: center;">
+                    
+                    <img style="max-width: 12rem;" [src]="item.path" alt="SVG Image">
+                    
+                </div>
+               
+                <mat-card-content>
+                    <div style="text-align: center;" >
+                        <h3 style="font-weight: bolder; font-size: 1.4rem;">{{item.title}}</h3>
+                        <p style="    font-size: 1.3em;
+                        line-height: 1.3em;font-weight: 100; ">
+                            {{item.description}}
+                        </p>
+                    </div>
+                </mat-card-content>
+                <!-- <mat-card-actions>
+                    <button mat-button>LIKE</button>
+                    <button mat-button>SHARE</button>
+                </mat-card-actions> -->
+            </mat-card>
+        </ng-container>
+    </div>
+
+
+</div>
+<hr style="margin-top: 1rem;margin-bottom: 3rem;     margin-right: 4rem;
+margin-left: 4rem; border: 1px solid #f2f2f2;">

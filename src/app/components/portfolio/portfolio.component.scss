@@ -1,0 +1,21 @@
+.home-title{
+    text-align: center;
+   
+    .title{
+        // font-size:tesclamp(1.8em,calc(1em + 2.4vw),3em) !important;
+        font-size: 4em;
+        
+    color: #673ab7;
+    font-weight: bolder;
+    }
+    .sub-title{
+        font-size: 2em;
+        max-width: 32em;
+        line-height: 2rem;
+    }
+    
+}
+.home-wrapper{
+    padding-top: 6em;
+    padding-bottom: 4em;
+}

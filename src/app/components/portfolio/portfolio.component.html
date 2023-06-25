@@ -1,0 +1,55 @@
+<div class="home-wrapper">
+    <div class="home-title">
+        <h1 class="title">Full-Stack Development Portfolio</h1>
+        <div style="display: flex;justify-content: center;    margin-top: 2rem;">
+            <p class="sub-title">Succeed online with a website that is fast, easy to use, and built with best practices
+                and a passion for design.</p>
+        </div>
+    </div>
+</div>
+
+<div *ngFor="let item of items">
+    <!-- <div style="display: flex; padding: 1.5em 1rem;justify-content: center;">
+                    
+        <img style="max-width: 12rem;" [src]="item.path" alt="SVG Image">
+        
+    </div> -->
+  
+
+</div>
+
+<mat-grid-list cols="3" rowHeight="250px">
+    <mat-grid-tile
+      style="margin: 1px"
+      colspan=1
+      rowspan=1
+    >
+    <img style="max-width: 12rem;" src="../../../assets/portfolio/1stProject.png" alt="SVG Image">
+    </mat-grid-tile>
+    <mat-grid-tile
+      style="margin: 1px"
+      colspan=2
+      rowspan=2 
+    >
+    
+    <img style="max-width: 100%;" src="../../../assets/portfolio/1stProject.png" alt="SVG Image">
+    </mat-grid-tile>
+    <mat-grid-tile
+    style="margin: 1px"
+    colspan=1
+    rowspan=1   
+  >
+  <img style="max-width: 12rem;" src="../../../assets/home-assets/frontend.jpeg" alt="SVG Image">
+  </mat-grid-tile>
+    <!-- <mat-grid-tile
+      style="margin: 1px"
+      *ngFor="let tile of tiles"
+      colspan=1
+      rowspan=1
+    >
+    <img style="max-width: 12rem;" src="../../../assets/home-assets/frontend.jpeg" alt="SVG Image">
+    </mat-grid-tile> -->
+  </mat-grid-list>
+
+  <hr style="margin-top: 1rem;margin-bottom: 3rem;     margin-right: 4rem;
+margin-left: 4rem; border: 1px solid #f2f2f2;">

@@ -12,13 +12,18 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatButtonModule} from '@angular/material/button';
 import { HomeComponent } from './components/home/home.component';
+import { MatCardModule } from '@angular/material/card';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { PortfolioComponent } from './components/portfolio/portfolio.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    HomeComponent
+    HomeComponent,
+    PortfolioComponent
   ],
   imports: [
     BrowserModule,
@@ -28,6 +33,9 @@ import { HomeComponent } from './components/home/home.component';
     MatToolbarModule,
     MatButtonModule, 
     MatDividerModule,
+    MatCardModule, 
+    MatButtonModule,
+    MatGridListModule
     //  MatIconModule
   ],
   providers: [],

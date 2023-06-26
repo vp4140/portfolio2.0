@@ -1,0 +1,56 @@
+.home-title{
+    text-align: center;
+   
+    .title{
+        // font-size:tesclamp(1.8em,calc(1em + 2.4vw),3em) !important;
+        font-size: 4em;
+        
+    color: #673ab7;
+    font-weight: bolder;
+    }
+    .sub-title{
+        font-size: 2em;
+        max-width: 32em;
+        line-height: 2rem;
+    }
+    
+}
+.home-wrapper{
+    padding-top: 6em;
+    padding-bottom: 4em;
+}
+
+.footer-profile{
+    display: flex;
+    align-items: center;
+    padding-bottom: 1rem;
+    .custom-image{
+      margin-right: 1rem;
+      .small-circle-image {
+        width: 7rem;
+        height: 7rem;
+        // border-radius: 50%; /* This makes the image circular */
+      }
+    }
+    .custom-message{
+      max-width: 50%;
+    //   font-size: 1rem;
+      font-size: 1.7em;
+      max-width: 32em;
+      line-height: 2rem;
+      font-weight: 100;
+    }
+ 
+
+  }
+
+  .details{
+    // max-width: 50%;
+  //   font-size: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1.7em;
+    max-width: 40em;
+    line-height: 2rem;
+    font-weight: 100;
+  }

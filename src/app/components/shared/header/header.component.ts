@@ -8,8 +8,8 @@ import { Router } from '@angular/router';
 })
 export class HeaderComponent {
   constructor(private router: Router) { }
-  openPortfolio(){
-    this.router.navigateByUrl('/portfolio');
+  openPortfolio(url:string){
+    this.router.navigateByUrl('/'+url);
   }
 
 }

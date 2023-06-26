@@ -19,3 +19,29 @@
     padding-top: 6em;
     padding-bottom: 4em;
 }
+
+svg:hover {
+    transform: scale(1.5);
+  }
+
+  svg:hover text {
+    animation: shake 0.5s 1;
+  }
+
+  @keyframes shake {
+    0% { transform: translate(-2px, -2px); }
+    20% { transform: translate(2px, 2px); }
+    40% { transform: translate(-2px, -2px); }
+    60% { transform: translate(2px, 2px); }
+    80% { transform: translate(-2px, -2px); }
+    100% { transform: translate(0, 0);}
+  }
+
+/* component.css */
+:host ::ng-deep .mat-grid-tile-content {
+    /* Styles for .mat-grid-tile-content */
+  
+    align-items: unset;
+   
+  }
+  

@@ -16,10 +16,10 @@
       <span class="example-spacer"></span>
         <ul class="custom-list">
             <li class="custom-list-item"><a href=""> Home</a></li>
-            <li class="custom-list-item"><a  (click)="openPortfolio()" >Portfolio </a></li>
-            <li class="custom-list-item"><a href="#">About</a></li>
-            <li class="custom-list-item"><a href="#">Testimonials</a></li>
-            <li class="custom-list-item"><a href="#">Articles</a></li>
+            <li class="custom-list-item"><a  (click)="openPortfolio('portfolio')" >Portfolio </a></li>
+            <li class="custom-list-item"><a (click)="openPortfolio('about')">About</a></li>
+            <li class="custom-list-item"><a (click)="openPortfolio('testimonials')">Testimonials</a></li>
+            <li class="custom-list-item"><a (click)="openPortfolio('articles')">Articles</a></li>
             <!-- <li class="custom-list-item"><a href="#">Button 6</a></li> -->
         </ul>
       <button mat-button color="accent" class="custom-button">Get In Touch</button>

@@ -15,6 +15,8 @@ import { HomeComponent } from './components/home/home.component';
 import { MatCardModule } from '@angular/material/card';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
+import { TestimonialsComponent } from './components/testimonials/testimonials.component';
+import { AboutComponent } from './components/about/about.component';
 
 
 @NgModule({
@@ -23,7 +25,9 @@ import { PortfolioComponent } from './components/portfolio/portfolio.component';
     HeaderComponent,
     FooterComponent,
     HomeComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    TestimonialsComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

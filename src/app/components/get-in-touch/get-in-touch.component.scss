@@ -1,5 +1,5 @@
 .home-title{
-    text-align: center;
+    // text-align: center;
    
     .title{
         // font-size:tesclamp(1.8em,calc(1em + 2.4vw),3em) !important;
@@ -17,13 +17,14 @@
 }
 .home-wrapper{
     padding-top: 6em;
-    padding-bottom: 4em;
+    // padding-bottom: 4em;
 }
-
 .footer-profile{
     display: flex;
-    align-items: center;
+    // align-items: center;
     padding-bottom: 1rem;
+    margin-top: 3rem;
+    padding-top: 6em;
     .custom-image{
       margin-right: 1rem;
       .small-circle-image {
@@ -33,27 +34,16 @@
       }
     }
     .custom-message{
-      max-width: 50%;
-    //   font-size: 1rem;
-      font-size: 1.7em;
-      max-width: 32em;
-      line-height: 2rem;
-      font-weight: 100;
+        max-width: 50%;
+    font-size: 12px;
+    max-width: 10rem;
+    /* line-height: 2rem; */
+    font-weight: 100;
     }
  
 
   }
-
-  .details{
-    // max-width: 50%;
-  //   font-size: 1rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    font-size: 1.7em;
-    max-width: 40em;
-    line-height: 2rem;
-    font-weight: 100;
+  .custom-text ::ng-deep .mat-mdc-text-field-wrapper {
+    background-color: #f5f0ff;
   }
-  .about-wrapper{
-    background-color: #efe8fc;
-  }
+  

@@ -15,6 +15,7 @@
       <span>Vishal Panchidi</span>
       <span class="example-spacer"></span>
         <ul class="custom-list">
+          <!-- get-in-touch -->
             <li class="custom-list-item"><a href=""> Home</a></li>
             <li class="custom-list-item"><a  (click)="openPortfolio('portfolio')" >Portfolio </a></li>
             <li class="custom-list-item"><a (click)="openPortfolio('about')">About</a></li>
@@ -22,7 +23,7 @@
             <li class="custom-list-item"><a (click)="openPortfolio('articles')">Articles</a></li>
             <!-- <li class="custom-list-item"><a href="#">Button 6</a></li> -->
         </ul>
-      <button mat-button color="accent" class="custom-button">Get In Touch</button>
+      <button mat-button color="accent" class="custom-button" (click)="openPortfolio('get-in-touch')">Get In Touch</button>
       
     </mat-toolbar-row>
     <!-- <div class="svg-container">

@@ -17,6 +17,14 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { TestimonialsComponent } from './components/testimonials/testimonials.component';
 import { AboutComponent } from './components/about/about.component';
+import { ArticlesComponent } from './components/articles/articles.component';
+import { GetInTouchComponent } from './components/get-in-touch/get-in-touch.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 
 @NgModule({
@@ -27,7 +35,9 @@ import { AboutComponent } from './components/about/about.component';
     HomeComponent,
     PortfolioComponent,
     TestimonialsComponent,
-    AboutComponent
+    AboutComponent,
+    ArticlesComponent,
+    GetInTouchComponent
   ],
   imports: [
     BrowserModule,
@@ -39,7 +49,13 @@ import { AboutComponent } from './components/about/about.component';
     MatDividerModule,
     MatCardModule, 
     MatButtonModule,
-    MatGridListModule
+    MatGridListModule,
+    ReactiveFormsModule,
+    MatInputModule,
+    MatFormFieldModule,
+    MatCheckboxModule,
+    BrowserAnimationsModule,
+    
     //  MatIconModule
   ],
   providers: [],

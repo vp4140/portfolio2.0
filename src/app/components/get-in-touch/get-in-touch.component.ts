@@ -32,7 +32,7 @@ export class GetInTouchComponent {
     }
     console.log(this.form);
     this.sendEmail(this.form.value.name, this.form.value.email, this.form.value.websiteLink, this.form.value.hireVishal, this.form.value.message);
-
+    this.form.reset()
 
     // Handle form submission here
     // Access form values using this.form.value

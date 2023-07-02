@@ -3,6 +3,8 @@
 
 <div style="display: flex;
 background: #efe8fc;
+justify-content: center;
+padding-bottom: 3rem;
 ">
     <div>
         <div style="margin: 3rem;" class="home-wrapper">
@@ -18,30 +20,30 @@ background: #efe8fc;
         margin: 3rem;">
         
             
-            <form class="custom-text" style="    padding: 2rem;" [formGroup]="form" (ngSubmit)="onSubmit()">
+            <form class="custom-text" style="    padding: 2rem;" [formGroup]="form" >
                 <div>
-                    <mat-form-field appearance="outline" style="width: 100%;">
+                    <mat-form-field appearance="outline" style="width: 100%;" class="form-group">
                         <mat-label>Name</mat-label>
                         <input matInput formControlName="name" required>
                         <!-- <mat-error *ngIf="f.name.invalid && (f.name.dirty || f.name.touched)">
                           Please enter a valid name.
                         </mat-error> -->
+                        <mat-error *ngIf="form.controls['name']?.errors">Name Required</mat-error>
                       </mat-form-field>
                     </div>
                     <div>
-                        <mat-form-field appearance="outline" style="width: 100%;">
+                        <mat-form-field appearance="outline" style="width: 100%;" class="form-group">
                             <mat-label>Email</mat-label>
                             <input matInput formControlName="email" required>
-                            <!-- <mat-error *ngIf="f.email.invalid && (f.email.dirty || f.email.touched)">
-                              Please enter a valid email address.
-                            </mat-error> -->
+                            <mat-error *ngIf="form.controls['email']?.errors">Valid Email Required</mat-error>
+
                           </mat-form-field>
         
                     </div>
                     
                     <div>
         
-                        <mat-form-field appearance="outline" style="width: 100%;">
+                        <mat-form-field appearance="outline" style="width: 100%;" class="form-group">
                             <mat-label>Website Link</mat-label>
                             <input matInput formControlName="websiteLink">
                           </mat-form-field>
@@ -50,19 +52,18 @@ background: #efe8fc;
                     
                     
                     
-                      <mat-checkbox formControlName="hireVishal">I WANT TO HIRE VISHAL</mat-checkbox>
+                      <mat-checkbox formControlName="hireVishal" >I WANT TO HIRE VISHAL</mat-checkbox>
                         <div>
-                            <mat-form-field appearance="outline" style="width: 100%;">
+                      <mat-form-field appearance="outline" style="width: 100%;" >
                                 <mat-label>General Message</mat-label>
                                 <textarea matInput formControlName="message" required></textarea>
-                                <!-- <mat-error *ngIf="f.message.invalid && (f.message.dirty || f.message.touched)">
-                                  Please enter a message.
-                                </mat-error> -->
+                                <!-- <mat-error *ngIf="form.controls['hireVishal']?.errors?.">Email Required</mat-error> -->
+
                               </mat-form-field>
                         </div>
                      
                     
-                      <button mat-raised-button color="primary" type="submit">Submit</button>
+                      <button mat-raised-button [disabled]="form.invalid" color="primary" type="submit" (click)="onSubmit()">Submit</button>
                 
           
               </form>
@@ -70,22 +71,118 @@ background: #efe8fc;
         </div>
     </div>
     <div>
+      <div class="porfile-wrapper">
+        <p style="font-size: 2em;
+        color: #673ab7;
+        font-weight: bolder; margin-bottom: 1rem;">About Vishal Panchidi</p>
         <div class="footer-profile" style="justify-content: center;">
             <div class="custom-image">
               <img src="../../../../assets/home-assets/profile.jpg" alt="Example JPEG image" class="small-circle-image">
             </div>
             <div class="custom-message">
-              <p>
-                I am a Front-end Developer with 12 years commercial experience, author of CSS3 Foundations, and graduate of Internet Technology. I create successful websites that are fast, easy to use, and built with best practices.
+              <p style="margin-bottom: 0px;">
+                I am a Front-end Developer with 12 years commercial experience, author of CSS3 Foundations, and graduate of Internet Technology. I create successful websites that are fast, easy to use, and built with best.
               </p>
         
               
             </div>
             
           </div>
+          <div class="custom-message">
+            <p style="font-size: 20px;
+              max-width: 33rem;
+              line-height: 1.7rem;;
+            font-weight: 100;
+            margin-bottom: 0px;">
+              I am a Front-end Developer with 12 years commercial experience, author of CSS3 Foundations, and graduate of Internet Technology. I create successful websites that are fast, easy to use, and built with best practices.
+            </p>
+      
+            
+          </div>
+      </div>    
+      <div style="margin-right: 3rem;">
+      <div class="contact-details">
+        <div style="display: flex;">
+          <p style="    font-size: 20px;
+          max-width: 33rem;
+          line-height: 1.7rem;
+          font-weight: 100;
+          margin-bottom: 0px;
+      ">
+            Email:  
+          </p>
+          <p style="
+              font-size: 20px;
+    max-width: 33rem;
+    line-height: 1.7rem;
+    font-weight: bold;
+    margin-bottom: 0px;
+    margin-left: 1rem;
+" >   vp8760@rit.edu
+          </p>
           
+        </div>
+        <div style="display: flex;">
+          <p style="    font-size: 20px;
+          max-width: 33rem;
+          line-height: 1.7rem;
+          font-weight: 100;
+          margin-bottom: 0px;
+      ">
+            Tel:
+          </p>
+          <p style="   font-size: 20px;
+          max-width: 33rem;
+          line-height: 1.7rem;
+          font-weight: bold;
+          margin-bottom: 0px;
+          margin-left: 1rem;">
+           +(585) 743 0203
+          </p>
           
+        </div>
+        <br>
+        <div>
+          <p style="    font-size: 20px;
+          max-width: 33rem;
+          line-height: 1.7rem;
+          font-weight: bold;
+          margin-bottom: 0px;
+          ">
+  Next available July 2023. Hire now.
+          </p>
+        </div>
+    
+        
+        <hr style="margin-top: 1rem;margin-bottom: 3rem;border: 1px solid #673ab7">
 
+        <p style="font-size: 2em;
+        color: #673ab7;
+        font-weight: bolder; margin-bottom: 2rem;">Non Professional Life</p>
+        <div>
+          <div class="custom-text" style=" height: 18rem;
+          /* width: 100%; */
+          padding: 2rem;
+        background-color: #e9e0ff" >
+             <img style="
+             max-height: -webkit-fill-available;
+             width: -webkit-fill-available;
+         
+         " 
+             src="../../../assets/sneak-peak/WhatsApp Image 2023-07-02 at 5.53.40 AM.jpeg"
+             alt="SVG Image">
+          </div>
+        </div>
+        <p style="font-size: 20px;
+        max-width: 33rem;
+        line-height: 1.7rem;;
+      font-weight: 100;
+      margin-top: 2rem;">
+ If you're interested in getting a sneak peek into my personal life, click here. This section will give you a glimpse of my hobbies and adventures, particularly my love for traveling. Join me on this exciting journey and discover more about my interests outside of my professional endeavors. Stay tuned for captivating stories, stunning photographs, and memorable experiences that have shaped my life. Let's embark on this virtual exploration together!      </p>
+
+      </div>
     </div>
+     
+   
    
 </div>

@@ -19,12 +19,15 @@
     padding-top: 6em;
     // padding-bottom: 4em;
 }
-.footer-profile{
+.porfile-wrapper{
+  padding-bottom: 1rem;
+  margin-top: 3rem;
+  margin-right: 3rem;
+  padding-top: 6em;
+  .footer-profile{
     display: flex;
     // align-items: center;
-    padding-bottom: 1rem;
-    margin-top: 3rem;
-    padding-top: 6em;
+   
     .custom-image{
       margin-right: 1rem;
       .small-circle-image {
@@ -34,15 +37,16 @@
       }
     }
     .custom-message{
-        max-width: 50%;
-    font-size: 12px;
-    max-width: 10rem;
-    /* line-height: 2rem; */
-    font-weight: 100;
+      font-size: 20px;
+      max-width: 25rem;
+      line-height: 1.7rem;;
+      font-weight: 100;
     }
  
 
   }
+}
+
   .custom-text ::ng-deep .mat-mdc-text-field-wrapper {
     background-color: #f5f0ff;
   }

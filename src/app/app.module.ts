@@ -25,6 +25,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
+import { ProjectDetailsComponent } from './components/project-details/project-details.component';
 
 
 @NgModule({
@@ -37,7 +38,8 @@ import { HttpClientModule } from '@angular/common/http';
     TestimonialsComponent,
     AboutComponent,
     ArticlesComponent,
-    GetInTouchComponent
+    GetInTouchComponent,
+    ProjectDetailsComponent
   ],
   imports: [
     BrowserModule,

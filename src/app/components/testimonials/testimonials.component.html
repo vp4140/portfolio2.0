@@ -2,76 +2,55 @@
 <div class="about-wrapper">
   <div class="home-wrapper">
     <div class="home-title">
-        <h1 class="title">Testimonials</h1>
-        <div style="display: flex;justify-content: center;    margin-top: 2rem;">
-            <p class="sub-title"> have 12 years commercial experience helping start-ups, small businesses, and agencies create successful websites.</p>
-        </div>
+      <h1 class="title">Testimonials</h1>
+      <div class="positionDetailsAdjustment">
+        <p class="sub-title"> have 12 years commercial experience helping start-ups, small businesses, and agencies
+          create successful websites.</p>
+      </div>
     </div>
-</div>
+  </div>
 
-  
-  <div *ngFor="let item of items; let i = index" style="padding-top: 3rem;padding-bottom: 3rem;">
-    <div style="display: flex; align-items: center; justify-content: center; margin-left: 3rem; margin-right: 3rem; padding-left: 5rem; padding-right: 5rem;">
+
+  <div *ngFor="let item of items; let i = index" class="testmonialblock">
+    <div class="testimonial-wrapper">
       <ng-container *ngIf="i % 2 === 0; else swapPositions">
         <!-- Positions are not swapped -->
-        <div style="width:30%; display: flex; align-items: center; justify-content: center;">
-            <div style="text-align: center;">
-                <h1>Company Name</h1>
-                <h3>Namme of Employee</h3> 
-            </div>
-            
+        <div class="employerBlock">
+          <div class="alignEmployer">
+            <h1>Company Name</h1>
+            <h3>Namme of Employee</h3>
+          </div>
+
         </div>
-        <div style="min-height: 15rem;
-                    width: 70%;
-                    color: black;
-                    background-color: #e9e0ff;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    padding-top: 2rem;
-                    padding-bottom: 2rem;
-                    padding-right: 5rem;
-                    padding-left: 5rem;
-                    font-size: 1.5em;
-                    line-height:2rem;font-weight: 100;">
-    Not only was Ian’s work on-time and to spec, he pays attention to improve the aesthetics of the site as well as the
-    functionality. Throughout the entire process he is responsive, and willing to work through issues as they arise. It’s
-    obvious he takes tremendous pride in his work, and I wouldn’t hesitate to recommend or work with him again.
-        </div>           
+        <div class="employerReviewBlock">
+          Not only was Ian’s work on-time and to spec, he pays attention to improve the aesthetics of the site as well
+          as the
+          functionality. Throughout the entire process he is responsive, and willing to work through issues as they
+          arise. It’s
+          obvious he takes tremendous pride in his work, and I wouldn’t hesitate to recommend or work with him again.
+        </div>
       </ng-container>
-  
+
       <ng-template #swapPositions>
         <!-- Positions are swapped -->
-        <div style="min-height: 15rem;
-                    width: 70%;
-                    color: black;
-                    background-color: #e9e0ff;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    padding-top: 2rem;
-                    padding-bottom: 2rem;
-                    padding-right: 5rem;
-                    padding-left: 5rem;
-                    font-size: 1.5em;
-                    line-height:2rem;font-weight: 100;">
-    Not only was Ian’s work on-time and to spec, he pays attention to improve the aesthetics of the site as well as the
-    functionality. Throughout the entire process he is responsive, and willing to work through issues as they arise. It’s
-    obvious he takes tremendous pride in his work, and I wouldn’t hesitate to recommend or work with him again.
-        </div> 
-        <div style="width:30%; display: flex; align-items: center; justify-content: center;">
-            <div style="text-align: center;">
-                <h1>Company Name</h1>
-                <h3>Namme of Employee</h3> 
-            </div>
-            
+        <div class="employerReviewBlock">
+          Not only was Ian’s work on-time and to spec, he pays attention to improve the aesthetics of the site as well
+          as the
+          functionality. Throughout the entire process he is responsive, and willing to work through issues as they
+          arise. It’s
+          obvious he takes tremendous pride in his work, and I wouldn’t hesitate to recommend or work with him again.
         </div>
-        
-    
-         
+        <div class="employerBlock">
+          <div class="alignEmployer">
+            <h1>Company Name</h1>
+            <h3>Namme of Employee</h3>
+          </div>
+
+        </div>
+
+
+
       </ng-template>
     </div>
   </div>
 </div>
-
-  

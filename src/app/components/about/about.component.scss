@@ -1,19 +1,21 @@
 .home-title{
-    text-align: center;
-   
-    .title{
-        // font-size:tesclamp(1.8em,calc(1em + 2.4vw),3em) !important;
-        font-size: 4em;
-        
-    color: #673ab7;
-    font-weight: bolder;
-    }
-    .sub-title{
-        font-size: 2em;
-        max-width: 32em;
-        line-height: 2rem;
-    }
-    
+  text-align: center;
+ .positionDetailsAdjustment{
+  display: flex;justify-content: center;margin-top: 2rem;
+ }
+  .title{
+      // font-size:tesclamp(1.8em,calc(1em + 2.4vw),3em) !important;
+      font-size: 4em;
+      
+  color: #673ab7;
+  font-weight: bolder;
+  }
+  .sub-title{
+      font-size: 2em;
+      max-width: 32em;
+      line-height: 2rem;
+  }
+  
 }
 .home-wrapper{
     padding-top: 6em;
@@ -24,6 +26,7 @@
     display: flex;
     align-items: center;
     padding-bottom: 1rem;
+    justify-content: center;
     .custom-image{
       margin-right: 1rem;
       .small-circle-image {
@@ -53,7 +56,12 @@
     max-width: 40em;
     line-height: 2rem;
     font-weight: 100;
+    justify-content: center;
   }
   .about-wrapper{
     background-color: #efe8fc;
+  }
+
+  .aboutData{
+    display: flex; justify-content: center;
   }

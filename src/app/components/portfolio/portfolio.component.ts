@@ -15,6 +15,7 @@ export interface Tile {
 })
 export class PortfolioComponent {
   constructor(private formBuilder: FormBuilder, private router: Router) { }
+  
   items = [
     { projectId:1,
       projectName: "Previous Portfolio",

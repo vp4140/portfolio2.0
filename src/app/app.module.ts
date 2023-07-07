@@ -26,6 +26,7 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { ProjectDetailsComponent } from './components/project-details/project-details.component';
+import { ArticleDetailsComponent } from './components/article-details/article-details.component';
 
 
 @NgModule({
@@ -39,7 +40,8 @@ import { ProjectDetailsComponent } from './components/project-details/project-de
     AboutComponent,
     ArticlesComponent,
     GetInTouchComponent,
-    ProjectDetailsComponent
+    ProjectDetailsComponent,
+    ArticleDetailsComponent
   ],
   imports: [
     BrowserModule,

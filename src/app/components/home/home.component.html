@@ -1,27 +1,24 @@
 <!-- <p>home works!</p> -->
 <div class="home-wrapper">
     <div class="home-title">
-        <h1 class="title">Successful Front-End Developer</h1>
-        <div style="display: flex;justify-content: center;    margin-top: 2rem;">
-            <p class="sub-title">Hi. I’m Vishal Panchidi, a freelance Front-end Developer with 4 years commercial experience
-                creating successful
-                websites.</p>
+        <h1 class="title">{{homeDetails.position}}</h1>
+        <div class="positionDetailsAdjustment">
+            <p class="sub-title">{{homeDetails.positionDetails}}</p>
         </div>
     </div>
 
-    <div style="display: flex; justify-content: center; margin-top: 3em;">
-        <ng-container *ngFor="let item of items">
+    <div class="primaryRolesAdjustment" >
+        <ng-container *ngFor="let role of homeDetails.primaryRoles">
             <mat-card class="example-card">
-                <div style="display: flex; padding: 1.5em 1rem;justify-content: center;">            
-                    <img style="max-width: 12rem;" [src]="item.path" alt="SVG Image">
+                <div class="primaryRolesImagesAdjustment" >            
+                    <img [src]="role.path" alt="SVG Image">
                 </div>
                
                 <mat-card-content>
-                    <div style="text-align: center;" >
-                        <h3 style="font-weight: bolder; font-size: 1.4rem;">{{item.title}}</h3>
-                        <p style="    font-size: 1.3em;
-                        line-height: 1.3em;font-weight: 100; ">
-                            {{item.description}}
+                    <div class="titleAndDescriptionBlock">
+                        <h3>{{role.title}}</h3>
+                        <p >
+                            {{role.description}}
                         </p>
                     </div>
                 </mat-card-content>

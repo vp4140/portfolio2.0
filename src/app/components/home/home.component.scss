@@ -13,7 +13,9 @@
 
 .home-title{
     text-align: center;
-   
+   .positionDetailsAdjustment{
+    display: flex;justify-content: center;margin-top: 2rem;
+   }
     .title{
         // font-size:tesclamp(1.8em,calc(1em + 2.4vw),3em) !important;
         font-size: 4em;
@@ -32,4 +34,23 @@
     padding-top: 6em;
     padding-bottom: 4em;
     background-color: #efe8fc;
+}
+.primaryRolesAdjustment{
+    display: flex; justify-content: center; margin-top: 3em;
+    .primaryRolesImagesAdjustment{
+        display: flex; padding: 1.5em 1rem;justify-content: center;
+        img{
+             max-width: 12rem;;
+        }
+    }
+}
+.titleAndDescriptionBlock{
+    text-align: center;
+    h3{
+    font-weight: bolder; font-size: 1.4rem;
+    }
+    p{
+        font-size: 1.3em;
+        line-height: 1.3em;font-weight: 100;
+    }
 }

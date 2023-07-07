@@ -15,29 +15,35 @@ export interface Tile {
 })
 export class PortfolioComponent {
   constructor(private formBuilder: FormBuilder, private router: Router) { }
+  portfolioDetails = {
+    portfolioTitle: "Successful Full-Stack Developer",
+    portfolioDetails: `Hi. I’m Vishal Panchidi, a freelance Front-end Developer with 4 years commercial experience
+    creating successful
+    websites.`,
+    projectDetails : [
+      { projectId:1,
+        projectName: "Previous Portfolio",
+        projectDescription: "Succeed online with a website that is fast, easy to use, and built with best practices and a passion for design. Succeed online with a website that is fast, easy to use, and built with best practices and a passion for design. Succeed online with a website that is fast, easy to use, and built with best practices and a passion for design. Succeed online with a website that is fast, easy to use, and built with best practices and a passion for design. Succeed online with a website that is fast, easy to use, and built with best practices and a passion for design.end",
+        projectPhoto: "../../../assets/home-assets/frontend.jpeg"
   
-  items = [
-    { projectId:1,
-      projectName: "Previous Portfolio",
-      projectDescription: "Succeed online with a website that is fast, easy to use, and built with best practices and a passion for design. Succeed online with a website that is fast, easy to use, and built with best practices and a passion for design. Succeed online with a website that is fast, easy to use, and built with best practices and a passion for design. Succeed online with a website that is fast, easy to use, and built with best practices and a passion for design. Succeed online with a website that is fast, easy to use, and built with best practices and a passion for design.end",
-      projectPhoto: "../../../assets/home-assets/frontend.jpeg"
-
-    },
-    {
-      projectId:2,
-      projectName: "Previous Portfolio",
-      projectDescription: "Succeed online with a website that is fast, easy to use, and built with best practices and a passion for design. Succeed online with a website that is fast, easy to use, and built with best practices and a passion for design. Succeed online with a website that is fast, easy to use, and built with best practices and a passion for design. Succeed online with a website that is fast, easy to use, and built with best practices and a passion for design. Succeed online with a website that is fast, easy to use, and built with best practices and a passion for design.end",
-      projectPhoto: "../../../assets/home-assets/frontend.jpeg"
-
-    },
-    {
-      projectId:3,
-      projectName: "Previous Portfolio",
-      projectDescription: "Succeed online with a website that is fast, easy to use, and built with best practices and a passion for design. Succeed online with a website that is fast, easy to use, and built with best practices and a passion for design. Succeed online with a website that is fast, easy to use, and built with best practices and a passion for design. Succeed online with a website that is fast, easy to use, and built with best practices and a passion for design. Succeed online with a website that is fast, easy to use, and built with best practices and a passion for design.end",
-      projectPhoto: "../../../assets/home-assets/frontend.jpeg"
-
+      },
+      {
+        projectId:2,
+        projectName: "Previous Portfolio",
+        projectDescription: "Succeed online with a website that is fast, easy to use, and built with best practices and a passion for design. Succeed online with a website that is fast, easy to use, and built with best practices and a passion for design. Succeed online with a website that is fast, easy to use, and built with best practices and a passion for design. Succeed online with a website that is fast, easy to use, and built with best practices and a passion for design. Succeed online with a website that is fast, easy to use, and built with best practices and a passion for design.end",
+        projectPhoto: "../../../assets/home-assets/frontend.jpeg"
+  
+      },
+      {
+        projectId:3,
+        projectName: "Previous Portfolio",
+        projectDescription: "Succeed online with a website that is fast, easy to use, and built with best practices and a passion for design. Succeed online with a website that is fast, easy to use, and built with best practices and a passion for design. Succeed online with a website that is fast, easy to use, and built with best practices and a passion for design. Succeed online with a website that is fast, easy to use, and built with best practices and a passion for design. Succeed online with a website that is fast, easy to use, and built with best practices and a passion for design.end",
+        projectPhoto: "../../../assets/home-assets/frontend.jpeg"
+  
+      }
+    ]
     }
-  ]
+ 
   ViewuserDetail(user_id: any) {
     let url: string = "/portfolio/" + user_id;
     const data = { id: 123, name: 'John' };

@@ -2,15 +2,15 @@
 <div>
 <div>
 
-    <div style="display: flex; justify-content: center;">
-        <div style="width: 20%;">
+    <div class="project-detail-title-wrapper">
+        <div class="project-detail-title-left" >
         </div>
     
         <div>
-            <div style="margin: 3rem;" >
+            <div class="project-goal-wrapper-right"  >
                 <div class="home-title">
                     <h1 class="title">{{mainItem.projectName}}</h1>
-                    <div style="display: flex;justify-content: center;    margin-top: 2rem;">
+                    <div class="project-goal">
                         <p class="sub-title">{{mainItem.projectGoal}}</p>
                     </div>
                 </div>
@@ -18,32 +18,16 @@
         </div>
     </div>
     
-    <div style="display: flex; justify-content: center;">
-        <div style="width: 20%;">
-            <p style="height: 4rem;
-                        color: white;
-                        background-color: #673ab7;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        font-size: 2rem;">
+    <div class="view-webite-left" >
+        <div class="view-website-wrapper" >
+            <p class="view-website-paragraph">
             View Website
         </p>
             <br>
-            <div style="min-height: 15rem;
-                        
-                        color: black;
-                        background-color: #e9e0ff;
-                        display: flex;
-                        align-items: center;
-                       
-                        padding: 2rem;
-                        font-size: 1.5em;
-                        line-height: 2rem;
-                        font-weight: 100;">
+            <div class="responsibilities-block" >
                         <div>
-                            <p style="font-weight: 700;">RESPONSIBILITIES</p>
-                            <ul style="list-style-type: disc;">
+                            <p class="responsibilities-title" >RESPONSIBILITIES</p>
+                            <ul >
                                 
                                     <li> JavaScript</li>
                                     <li> React/Redux</li>
@@ -62,31 +46,15 @@
             
             </div>
             <br>
-            <div style="min-height: 15rem;
-                        
-            color: black;
-            background-color: #e9e0ff;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding-top: 2rem;
-            padding-bottom: 2rem;
-            padding-right: 3rem;
-            padding-left: 3rem;
-            font-size: 1.5em;
-            line-height: 2rem;
-            font-weight: 100;">
+            <div class="responsibilities-block" >
             <div>
-                <p style="font-weight: 700;">UPDATES</p>
+                <p sclass="responsibilities-title">UPDATES</p>
               
-                <div style="margin-top: 2rem;margin-bottom: 2rem;">
-                    <p style="font-weight: 700;">15 May 2020</p>
-                    <p> Updated to show Pet Plate's progress up to 2020</p>
+                <div class="update-block" >
+                    <p class="update-date" >15 May 2020</p>
+                    <p class="update-data"> Updated to show Pet Plate's progress up to 2020</p>
                 </div>
-                <div style="margin-top: 2rem;margin-bottom: 2rem;">
-                    <p style="font-weight: 700;">28 Sep 2019</p>
-                    <p> Updated for 3 years of working on the Pet Plate website, describing Pet Plate's expansion and my responsibilities as the company has grown.</p>
-                </div>
+               
                
             </div>
    
@@ -94,7 +62,7 @@
             <br>
             <div class="porfile-wrapper">
                
-                <div class="footer-profile" style="justify-content: center;">
+                <div class="footer-profile" >
                     <div class="custom-image">
                       <img src="../../../../assets/home-assets/profile.jpg" alt="Example JPEG image" class="small-circle-image">
                     </div>
@@ -102,20 +70,14 @@
                     
                   </div>
                   <div class="custom-message">
-                    <p style="font-size: 20px;
-                      max-width: 33rem;
-                      line-height: 1.7rem;;
-                    font-weight: 100;
-                    margin-top: 2rem;">
+                    <p  >
                       I am a Front-end Developer with 12 years commercial experience, author of CSS3 Foundations, and graduate of Internet Technology. I create successful websites that are fast, easy to use, and built with best practices.
                     </p>
               
                     
                   </div>
                   <br>
-                  <div style="display: flex;
-                  /* max-width: 12em; */
-                  justify-content: space-around;">
+                  <div class="social-links" >
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
                         <path d="M22.499 4.583c-.819.364-1.698.61-2.616.722a4.602 4.602 0 0 0 2.01-2.548 9.204 9.204 0 0 1-2.924 1.116A4.592 4.592 0 0 0 16.437 2c-2.603 0-4.705 2.1-4.705 4.706 0 .37.042.733.123 1.08C8.027 7.823 4.263 6.07 1.732 3.083a4.724 4.724 0 0 0-.63 2.355c0 1.627.828 3.065 2.08 3.907a4.604 4.604 0 0 1-2.105-.583v.058c0 2.27 1.616 4.163 3.763 4.593a4.647 4.647 0 0 1-1.221.162c-.298 0-.587-.028-.872-.083.588 1.852 2.295 3.2 4.322 3.234a9.26 9.26 0 0 1-5.751 1.974 9.166 9.166 0 0 01-1.076-.065 13.007 13.007 0 0 0 7.037 2.059c8.448 0 13.06-7 13.06-13.06 0-.198-.005-.394-.014-.588a9.317 9.317 0 0 0 2.3-2.37z"/>
                       </svg>
@@ -135,65 +97,34 @@
             
         </div>
     
-        <div style="margin-left: 3rem;">
-            <div style="margin-bottom: 5rem;"  *ngFor="let item of mainItem.items" >
-                <p style="font-size: 2em;
-                font-weight: 700;
-                max-width: 32em;
-                line-height: 2rem;
-                color: #673ab7;">{{item.subTitle}}</p>
+        <div class="project-details-right" >
+            <div  class="project-details-right-block"  *ngFor="let item of mainItem.items" >
+                <p class="project-title" >{{item.subTitle}}</p>
 
-                <p style="    font-size: 1.4em;
-                max-width: 46em;
-                line-height: 1.7rem;
-                font-weight: 100;
-                margin-top: 2rem;
-                margin-bottom: 2rem;">
-                    {{item.subTitleDetail}}
+                <p class="project-title-description"  *ngFor="let paragraph of splitIntoParagraphs(item.subTitleDetail)">
+                    {{paragraph}}
 
                 
                 </p>
-                <div style="background: #e9e0ff;
-                padding: 2rem;
-              
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                
-            ">
-                    <img style="max-width: 100%; max-height: 100%;" 
+                <div class="description-img-block" >
+                    <img 
                 [src]="item.subtitleImge" 
                 alt="SVG Image">
                 </div>
-                <p *ngIf="item.moreDetail" style="    font-size: 1.4em;
-                max-width: 46em;
-                line-height: 1.7rem;
-                font-weight: 100;
-                margin-top: 2rem;
-                margin-bottom: 2rem;">
-                    {{item.subTitleDetail}}
-
+                <div *ngIf="item.moreDetail">
+                    <p  class="project-title-description"  *ngFor="let paragraph of splitIntoParagraphs(item.subTitleDetail)">
+                        {{paragraph}}             
+                    </p>
+                </div>
                 
-                </p>
                 <div  *ngIf="item.testimonial">
-                    <div style="min-height: 15rem;
-
-                    width:40em;
-                    color: black;
-                    background-color: #e9e0ff;
-                    margin-top: 2rem;margin-bottom: 2rem;
-                    align-items: center;
-                    justify-content: center;
-                    padding: 2rem;
-                    font-size: 1.5em;
-                    line-height:2rem;font-weight: 100;
-                    display: flex;"
+                    <div class="testimonial-wrapper" 
                         *ngFor="let testimonialItem of item.testimonial">
                    
                     <div>
                     <p> {{testimonialItem.message}}</p>
                     <br>
-                    <p style="font-weight: 700;"> - {{testimonialItem.personName}},  {{testimonialItem.personPosition}}</p>
+                    <p class="testimonial-person-review"> - {{testimonialItem.personName}},  {{testimonialItem.personPosition}}</p>
                     </div> 
        
     </div>

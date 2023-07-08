@@ -84,13 +84,29 @@ export class ArticleDetailsComponent implements OnInit {
         {
           subTitle: "Build Speed",
           articlePhoto: "../../../assets/home-assets/frontend.jpeg",
-          subTopicDescription: "Not only is Ian's work on-time and to spec, he pays attention to improve the aesthetics of the site as well as the functionality. Throughout the entire process he is responsive, and willing to work through issues as they arise. It's obvious he takes tremendous pride in his work, and I wouldn't hesitate to recommend or work with him again.",
+          subTopicDescription: "Not only is Ian's work on-time and to spec, he pays attention to improve the aesthetics of the site as well as the functionality. Throughout the entire process he is responsive, and willing to work through issues as they arise. It's obvious he takes tremendous pride in his work, and I wouldn't hesitate to recommend or work with him again.Not only is Ian's work on-time and to spec, he pays attention to improve the aesthetics of the site as well as the functionality. Throughout the entire process he is responsive, and willing to work through issues as they arise. It's obvious he takes tremendous pride in his work, and I wouldn't hesitate to recommend or work with him again.Not only is Ian's work on-time and to spec, he pays attention to improve the aesthetics of the site as well as the functionality. Throughout the entire process he is responsive, and willing to work through issues as they arise. It's obvious he takes tremendous pride in his work, and I wouldn't hesitate to recommend or work with him again.",
         }, {
           subTitle: "Conclusion",
           // articlePhoto: "../../../assets/home-assets/frontend.jpeg",
           subTopicDescription: "Gatsby has some great performance features and its heart is in the right place when trying to simplify certain areas of basic web publishing such as handling images. The learning curve was a little steeper than I had hoped but now having experienced the worst, Gatsby is another tool worth keeping in mind for future projects. My aim when creating my portfolio was to do it in a short period of time. Gatsby enabled me to do that. There were some unexpected issues mentioned above that slowed me a little but these could probably be solved by digging deeper into Gatsby; creating my own plugin(s) and getting more involved with Gatsby's open-source community. Something for my next Gatsby project.",
         },],
     }
+  }
+  splitIntoParagraphs(text: string): string[] {
+    const sentences = text.split('. ');
+    const paragraphs: string[] = [];
+  
+    let currentParagraph = '';
+    for (let i = 0; i < sentences.length; i++) {
+      currentParagraph += sentences[i] + '. ';
+  
+      if ((i + 1) % 3 === 0 || i === sentences.length - 1) {
+        paragraphs.push(currentParagraph.trim());
+        currentParagraph = '';
+      }
+    }
+  
+    return paragraphs;
   }
 
 

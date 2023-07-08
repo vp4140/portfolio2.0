@@ -3,30 +3,28 @@
     <div class="home-title">
         <h1 class="title">Technical Article's</h1>
 
-       
+
     </div>
 
 
-<div>
-    <div style="display: flex;
-    justify-content: center;    margin-top: 5rem;
-    margin-bottom: 5rem;" *ngFor="let item of items">
-        <div (click)="ViewuserDetail(item.articleId)" >
-            
-            <p style="font-weight: 100;">{{item.articleDate}}</p>
-            <h1 style="display: flex;align-items: center; ">
-                
-                {{item.articleName}}
-            </h1>
-            <div style="max-height: 25rem; overflow-y: auto;">
-                <p style="font-size: 1.4em;max-width: 40em;line-height: 1.7rem;font-weight: 100;">
-                   {{item.articleDescription}}
-                </p>
+    <div>
+        <div class="article-block" *ngFor="let item of items">
+            <div (click)="ViewuserDetail(item.articleId)">
+
+                <p class="article-date">{{item.articleDate}}</p>
+                <h1 class="article-name">
+
+                    {{item.articleName}}
+                </h1>
+                <div class="article-description">
+                    <p class="article-description-text">
+                        {{item.articleDescription}}
+                    </p>
+                </div>
             </div>
-        </div>
-       
-    
-    </div>
 
-</div>
+
+        </div>
+
+    </div>
 </div>

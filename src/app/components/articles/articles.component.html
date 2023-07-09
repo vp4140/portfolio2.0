@@ -9,7 +9,7 @@
 
     <div>
         <div class="article-block" *ngFor="let item of items">
-            <div (click)="ViewuserDetail(item.articleId)">
+            <div (click)="ViewuserDetail(item.articleId,item)">
 
                 <p class="article-date">{{item.articleDate}}</p>
                 <h1 class="article-name">

@@ -12,6 +12,7 @@ import { TestimonialsComponent } from './components/testimonials/testimonials.co
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
+  { path: 'home', component: HomeComponent },
   { path: 'portfolio', component: PortfolioComponent},
   { path: 'portfolio/:id', component: ProjectDetailsComponent },
   { path: 'testimonials', component:TestimonialsComponent},

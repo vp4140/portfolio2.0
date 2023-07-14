@@ -25,7 +25,7 @@
     left: 0.0em;
     right: 0.0em;
     bottom: -1.5rem;
-    height: 0.2em;
+    height: 0.2rem;
     background-color: chartreuse;
     transform: scaleX(0);
     transform-origin: 0 50%;
@@ -56,12 +56,12 @@
     circle {
       fill: transparent;
       stroke: white;
-      stroke-width: 4px;
+      stroke-width: 0.25rem;
     }
   
     text {
       font-family: Arial, sans-serif;
-      font-size: 16px;
+      font-size: 1rem;
       text-anchor: middle;
       dominant-baseline: central;
       pointer-events: none;

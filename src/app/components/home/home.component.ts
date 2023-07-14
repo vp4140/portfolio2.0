@@ -1,11 +1,15 @@
-import { Component } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit {
+
+  ngOnInit(){
+// console.log(this.FromHome)
+  }
   homeDetails = {
     position: "Successful Full-Stack Developer",
     positionDetails: `Hi. I’m Vishal Panchidi, a freelance Front-end Developer with 4 years commercial experience

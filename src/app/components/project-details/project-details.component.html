@@ -29,8 +29,8 @@
                             <p class="responsibilities-title" >RESPONSIBILITIES</p>
                             <ul >
                                 
-                                    <li> JavaScript</li>
-                                    <li> React/Redux</li>
+                                    <li  *ngFor="let item of mainItem.responsibilities"> {{item}}</li>
+                                    <!-- <li> React/Redux</li>
                                     <li> APIs</li>
                                     <li> Semantic HTML</li>
                                     <li> Responsive CSS</li>
@@ -40,7 +40,7 @@
                                     <li> WCAG 2.1 AA compliance</li>
                                     <li> Browser Testing</li>
                                     <li> VWO (A/B Testing)</li>
-                                    <li> GitHub</li>
+                                    <li> GitHub</li> -->
                                     </ul>
                         </div>
             
@@ -48,11 +48,11 @@
             <br>
             <div class="responsibilities-block" >
             <div>
-                <p sclass="responsibilities-title">UPDATES</p>
+                <p class="responsibilities-title">UPDATES</p>
               
-                <div class="update-block" >
-                    <p class="update-date" >15 May 2020</p>
-                    <p class="update-data"> Updated to show Pet Plate's progress up to 2020</p>
+                <div  *ngFor="let item of mainItem.updates" class="update-block" >
+                    <p class="update-date" >{{item.date}}</p>
+                    <p class="update-data">{{item.update}}</p>
                 </div>
                
                
@@ -60,7 +60,7 @@
    
             </div>
             <br>
-            <div class="porfile-wrapper">
+            <!-- <div class="porfile-wrapper">
                
                 <div class="footer-profile" >
                     <div class="custom-image">
@@ -93,8 +93,8 @@
                       </svg>
                 </div>
               </div> 
-              <br>   
-            
+              <br>    -->
+            <app-profile-block></app-profile-block>
         </div>
     
         <div class="project-details-right" >

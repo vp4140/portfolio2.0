@@ -10,39 +10,32 @@
 
     <!-- <div style="display: flex; justify-content: center;"></div> -->
     <div *ngFor="let item of portfolioDetails.projectDetails" class="portfolio-grid">
-        <!-- <div>{{item.projectName}}</div> -->
-        <mat-grid-list cols="3" rowHeight="22rem">
-            <mat-grid-tile colspan=1 rowspan=2>
-                <div class="grid-left">
-                    <div class="projectname-block">
-                        {{item.projectName}}
-                    </div>
+        
+        <div class="grid-left">
+            <div class="projectname-block">
+                {{item.projectName}}
+            </div>
 
-                    <div (click)="ViewuserDetail(item.projectId,item.projectDetails)">
-                        <br>
-                        <h1 class="projectname-adjustment">
-                            {{item.projectName}}
-                        </h1>
-                        <div class="project-description-block">
-                            <p>
-                                {{item.projectDescription}}
+            <div (click)="ViewuserDetail(item.projectId,item.projectDetails)">
+                <br>
+                <h1 class="projectname-adjustment">
+                    {{item.projectName}}
+                </h1>
+                <div class="project-description-block">
+                    <p>
+                        {{item.projectDescription}}
 
-                            </p>
-                        </div>
-
-                    </div>
-
-                </div>
-            </mat-grid-tile>
-
-            <mat-grid-tile colspan=2 rowspan=2>
-                <div class="grid-right">
-                    <img [src]="item.projectPhoto" alt="SVG Image">
+                    </p>
                 </div>
 
-            </mat-grid-tile>
+            </div>
 
-        </mat-grid-list>
+        </div>
+        <div class="grid-right">
+            <img [src]="item.projectPhoto" alt="SVG Image">
+        </div>
+    
+
 
         <br>
     </div>

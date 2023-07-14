@@ -1,7 +1,7 @@
 .example-card {
-    max-width: 27em;
+    max-width: 27rem;
     margin-right: 1rem;
-    margin-left: 1em;
+    margin-left: 1rem;
     box-shadow: none;
     background-color: #e9e0ff;
 }
@@ -18,30 +18,38 @@
    }
     .title{
         // font-size:tesclamp(1.8em,calc(1em + 2.4vw),3em) !important;
-        font-size: 4em;
-        
+        font-size: 4rem;
+        line-height: 4rem;
     color: #673ab7;
     font-weight: bolder;
     }
     .sub-title{
-        font-size: 2em;
-        max-width: 32em;
+        font-size: 2rem;
+        max-width: 62rem;
         line-height: 2rem;
+        padding-right: 2rem;
+        padding-left: 2rem;
     }
     
 }
 .home-wrapper{
-    padding-top: 6em;
-    padding-bottom: 4em;
+    padding-top: 6rem;
+    padding-bottom: 4rem;
     background-color: #efe8fc;
+    @media (max-width: 767px) {
+    padding: 2rem;
+  }
 }
 .primaryRolesAdjustment{
-    display: flex; justify-content: center; margin-top: 3em;
+    display: flex; justify-content: center; margin-top: 3rem;
     .primaryRolesImagesAdjustment{
-        display: flex; padding: 1.5em 1rem;justify-content: center;
+        display: flex; padding: 1.5rem 1rem;justify-content: center;
         img{
              max-width: 12rem;;
         }
+    }
+    @media (max-width: 767px) {
+        flex-wrap: wrap;;
     }
 }
 .titleAndDescriptionBlock{
@@ -50,7 +58,7 @@
     font-weight: bolder; font-size: 1.4rem;
     }
     p{
-        font-size: 1.3em;
-        line-height: 1.3em;font-weight: 100;
+        font-size: 1.3rem;
+        line-height: 1.3rem;font-weight: 100;
     }
 }

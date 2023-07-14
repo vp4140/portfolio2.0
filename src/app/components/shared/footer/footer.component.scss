@@ -1,6 +1,6 @@
 .footer {
   background-color: #673ab7;
-  padding: 2rem 10rem;
+  padding: 2rem 8rem;
   color: white;
   }
   
@@ -16,6 +16,8 @@
     padding: 0;
     margin: 0;
     display: flex;
+    font-weight: bolder;
+    font-size: 1.5rem;
   }
   
   .footer-links li {
@@ -40,10 +42,11 @@
   .footer-text {
     margin-top: 20px;
     color: white;
-    font-size: 14px;
+    font-size:1.5rem;
   }
 .footer-main-content{
   display: flex;
+  // flex-wrap: wrap;
  
   .footer-profile{
     display: flex;
@@ -60,7 +63,7 @@
    
       max-width: 50%;
       
-      font-size: 1.3em;
+      font-size: 1.3rem;
       /* max-width: 32em; */
       line-height: 1.5rem;
       font-weight: 100;
@@ -70,15 +73,31 @@
   }
   .footer-block{
     margin-right: 2rem;
+    p{
+      // max-width: 16rem;
+      font-size: 1.3rem;
+      line-height: 1.5rem;
+      font-weight: 100;
+    }
     .image-title{
       display: flex;
       font-size: 1rem;
       align-items: center;
+      display: flex;
+      align-items: center;
+      font-size: 1.3rem;
+      line-height: 1.5rem;
+      font-weight: bolder;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+  
     }
     svg{
       margin-right: 0.5rem;
     }
   }
+
+
 
 }
 
@@ -87,3 +106,89 @@
     /* align-items: center; */
     justify-content: center
   }
+
+
+  @media (max-width: 1023px) {
+    .footer {
+      background-color: #673ab7;
+      padding: 2rem 2rem;
+      color: white;
+      }
+    .footer-main-content{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+     
+      .footer-profile{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .custom-image{
+          margin-right: 1rem;
+          .small-circle-image {
+            width: 10rem;
+            height: 10rem;
+            border-radius: 50%; /* This makes the image circular */
+          }
+        }
+      
+     
+    
+      }
+      .footer-block{
+        margin: 2rem;
+        p{
+          max-width: 16rem;
+          font-size: 1.3rem;
+          line-height: 1.5rem;
+        }
+        
+        svg{
+          margin-right: 0.5rem;
+        }
+      }
+    
+    
+    
+    }
+  }
+  @media (max-width: 767px) {
+    .footer {
+      background-color: #673ab7;
+      padding: 2rem 2rem;
+      color: white;
+      }
+    .footer-main-content{
+      display: flex;
+      flex-wrap: wrap;
+     
+      .footer-profile{
+        display: flex;
+        align-items: center;
+        .custom-image{
+          margin-right: 1rem;
+          .small-circle-image {
+            width: 10rem;
+            height: 10rem;
+            border-radius: 50%; /* This makes the image circular */
+          }
+        }
+        
+     
+    
+      }
+      .footer-block{
+        margin: 2rem;
+        p{
+          max-width: 24rem;
+        }
+    
+        svg{
+          margin-right: 0.5rem;
+        }
+      }
+    
+    
+    
+    }
+  }  

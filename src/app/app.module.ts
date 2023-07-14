@@ -27,6 +27,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { ProjectDetailsComponent } from './components/project-details/project-details.component';
 import { ArticleDetailsComponent } from './components/article-details/article-details.component';
+import { ProfileBlockComponent } from './components/profile-block/profile-block.component';
 
 
 @NgModule({
@@ -41,7 +42,8 @@ import { ArticleDetailsComponent } from './components/article-details/article-de
     ArticlesComponent,
     GetInTouchComponent,
     ProjectDetailsComponent,
-    ArticleDetailsComponent
+    ArticleDetailsComponent,
+    ProfileBlockComponent
   ],
   imports: [
     BrowserModule,

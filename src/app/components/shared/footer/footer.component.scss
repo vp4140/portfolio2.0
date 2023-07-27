@@ -46,6 +46,7 @@
   }
 .footer-main-content{
   display: flex;
+  padding-bottom: 2rem;
   // flex-wrap: wrap;
  
   .footer-profile{
@@ -62,11 +63,9 @@
     .custom-message{
    
       max-width: 50%;
-      
-      font-size: 1.3rem;
-      /* max-width: 32em; */
-      line-height: 1.5rem;
       font-weight: 100;
+      font-size: 1.2rem;
+      line-height: 2rem;
     }
  
 
@@ -115,6 +114,7 @@
       color: white;
       }
     .footer-main-content{
+      padding-bottom: 2rem;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;

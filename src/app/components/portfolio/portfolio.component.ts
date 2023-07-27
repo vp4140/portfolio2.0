@@ -27,24 +27,25 @@ export class PortfolioComponent {
       projectDetails: [
         {
           projectId: 1,
-          projectName: "Previous Portfolio",
-          projectDescription: "Succeed online with a website that is fast, easy to use, and built with best practices and a passion for design. Succeed online with a website that is fast, easy to use, and built with best practices and a passion for design. Succeed online with a website that is fast, easy to use, and built with best practices and a passion for design. Succeed online with a website that is fast, easy to use, and built with best practices and a passion for design. Succeed online with a website that is fast, easy to use, and built with best practices and a passion for design.end Succeed online with a website that is fast, easy to use, and built with best practices and a passion for design. Succeed online with a website that is fast, easy to use, and built with best practices and a passion for design. Succeed online with a website that is fast, easy to use, and built with best practices and a passion for design. Succeed online with a website that is fast, easy to use, and built with best practices and a passion for design. Succeed online with a website that is fast, easy to use, and built with best practices and a passion for design.end",
-          projectPhoto: "../../../assets/sneak-peak/WhatsApp Image 2023-07-02 at 5.53.40 AM.jpeg",
+          projectName: "Lab Operation Systems",
+          projectLogo:"../../../assets/portfolio/GCCIS/gccis-logo.jpeg",
+          projectDescription: "Lab displays around various labs at Rochester Institute of Technology are used to communicate important information to students. These displays show lab hours, special events, tutoring hours, and slideshows. The events managed through the Event Management System (EMS) must have their open hours entered in the system. However, for labs or events not maintained by EMS, the information can be manually entered here.",
+          projectPhoto: "../../../assets/portfolio/GCCIS/gccis-landing-page.jpeg",
           // portfolio-website/src/assets/
           projectDetails: {
-            projectName: "Pet Plate",
-            projectGoal: "Working with Pet Plate over 5 years, from initial idea to now a company with a total investment fund of $13 million dollars",
-            responsibilities:['JavaScript','JavaScript','JavaScript','JavaScript'],
+            projectName: "LabOps Systems",
+            projectGoal: "Working with Rochester Institute of Technology over 4 months, from initial idea to now a complete system with users all across RIT",
+            responsibilities:['Angular 15','PHP','Maria DB','Javascript','Angular Material'],
             updates:[{
-              date:"15 May 2020",
-              update:"Updated to show Pet Plate's progress up to 2020"
+              date:"20 July 2023",
+              update:"Updated to show Labops progress up to 2023"
             }],
             items: [
               {
                 subTitle: "Project Details",
-                subTitleDetail: "Succeed online with a website that is fast, easy to use, and built with best practices and a passion for design.<br> Succeed online with a website that is fast, easy to use, and built with best practices and a passion for design. Succeed online with a website that is fast, easy to use, and built with best practices and a passion for design. Succeed online with a website that is fast, easy to use, and built with best practices and a passion for design. Succeed online with a website that is fast, easy to use, and built with best practices and a passion for design.end",
+                subTitleDetail: "Lab displays around various labs at RIT are used to communicate important information to students. These displays show lab hours, special events, tutoring hours, and slideshows. The events managed through the Event Management System (EMS) must have their open hours entered in the system. However, for labs or events not maintained by EMS, the information can be manually entered here",
                 subtitleImge: "../../../assets/home-assets/frontend.jpeg",
-                moreDetail: "Succeed online with a website that is fast, easy to use, and built with best practices and a passion for design. Succeed online with a website that is fast, easy to use, and built with best practices and a passion for design. Succeed online with a website that is fast, easy to use, and built with best practices and a passion for design. Succeed online with a website that is fast, easy to use, and built with best practices and a passion for design. Succeed online with a website that is fast, easy to use, and built with best practices and a passion for design.end",
+                moreDetail: "Our lab displays serve as a crucial source of information for students at RIT. Here, you can find the latest updates on lab hours, special events, tutoring schedules, and engaging slideshows. To ensure smooth operations, we follow these simple guidelines for managing the displays",
                 testimonial: [{
                   message: "Not only is Ian's work on-time and to spec, he pays attention to improve the aesthetics of the site as well as the functionality. Throughout the entire process he is responsive, and willing to work through issues as they arise. It's obvious he takes tremendous pride in his work, and I wouldn't hesitate to recommend or work with him again.",
                   personName: "Renaldo Webb",

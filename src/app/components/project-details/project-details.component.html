@@ -112,7 +112,7 @@
                 alt="SVG Image">
                 </div>
                 <div *ngIf="item.moreDetail">
-                    <p  class="project-title-description"  *ngFor="let paragraph of splitIntoParagraphs(item.subTitleDetail)">
+                    <p  class="project-title-description"  *ngFor="let paragraph of splitIntoParagraphs(item.moreDetail)">
                         {{paragraph}}             
                     </p>
                 </div>

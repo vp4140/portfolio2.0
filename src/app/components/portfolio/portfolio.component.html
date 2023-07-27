@@ -13,7 +13,10 @@
         
         <div class="grid-left">
             <div class="projectname-block">
-                {{item.projectName}}
+                <img [src]="item.projectLogo" style="width: 100%;
+                height: 100%;
+            " alt="">
+            
             </div>
 
             <div (click)="ViewuserDetail(item.projectId,item.projectDetails)">

@@ -10,11 +10,11 @@
     padding-left: 2rem;
     }
     .sub-title{
-        font-size: 2em;
-        max-width: 32em;
-        line-height: 2rem;
-        padding-right: 2rem;
-        padding-left: 2rem;
+      font-size: 2em;
+      max-width: 54rem;
+      line-height: 2.5rem;
+      padding-right: 2rem;
+      padding-left: 2rem;
     }
     
 }
@@ -78,6 +78,9 @@
 
   ul{
     list-style-type: disc;
+    li{
+      font-weight: 500;
+    }
   }
 }
 .update-block{
@@ -101,9 +104,9 @@
                 color: #673ab7;
     }
     .project-title-description{
-      font-size: 1.4em;
-      max-width: 46em;
-      line-height: 1.7rem;
+      font-size: 1.2rem;
+      max-width: 55rem;
+      line-height: 2rem;
       font-weight: 100;
       margin-top: 2rem;
       margin-bottom: 2rem;
@@ -115,6 +118,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                max-width: 50rem;
                 img{
                   max-width: 100%; max-height: 100%;
                 }
@@ -122,16 +126,22 @@
     .testimonial-wrapper{
       min-height: 15rem;
 
-                    width:40em;
+                  
                     color: black;
                     background-color: #e9e0ff;
-                    margin-top: 2rem;margin-bottom: 2rem;
+                   
                     align-items: center;
                     justify-content: center;
                     padding: 2rem;
                     font-size: 1.5em;
-                    line-height:2rem;font-weight: 100;
+                  
                     display: flex;
+                    font-size: 1.2rem;
+                    max-width: 50rem;
+                    line-height: 2rem;
+                    font-weight: 100;
+                    margin-top: 2rem;
+                    margin-bottom: 2rem;
 
                     .testimonial-person-review{
                       font-weight: 700;

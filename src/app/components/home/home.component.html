@@ -1,0 +1,35 @@
+<!-- <p>home works!</p> -->
+<div class="home-wrapper">
+    <div class="home-title">
+        <h1 class="title">{{homeDetails.position}}</h1>
+        <div class="positionDetailsAdjustment">
+            <p class="sub-title">{{homeDetails.positionDetails}}</p>
+        </div>
+    </div>
+
+    <div class="primaryRolesAdjustment" >
+        <ng-container *ngFor="let role of homeDetails.primaryRoles">
+            <mat-card class="example-card">
+                <div class="primaryRolesImagesAdjustment" >            
+                    <img [src]="role.path" alt="SVG Image">
+                </div>
+               
+                <mat-card-content>
+                    <div class="titleAndDescriptionBlock">
+                        <h3>{{role.title}}</h3>
+                        <p >
+                            {{role.description}}
+                        </p>
+                    </div>
+                </mat-card-content>
+            </mat-card>
+        </ng-container>
+    </div>
+</div>
+<!-- <hr style="margin-top: 1rem;margin-bottom: 3rem;     margin-right: 4rem;
+margin-left: 4rem; border: 1px solid #f2f2f2;"> -->
+
+<app-portfolio fromHome="true"></app-portfolio>
+
+
+<app-testimonials fromHome="true"></app-testimonials>

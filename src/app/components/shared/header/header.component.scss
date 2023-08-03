@@ -1,0 +1,88 @@
+.mat-toolbar-row-right {
+    justify-content: flex-end;
+  }
+  
+.custom-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .custom-list-item {
+    display: inline-block;
+    margin-right: 2rem;
+  }
+  
+  .custom-list-item a {
+    position: relative;
+    text-decoration: none;
+    color: white;
+  }
+  
+  .custom-list-item a::after {
+    content: "";
+    visibility: hidden;
+    position: absolute;
+    left: 0.0em;
+    right: 0.0em;
+    bottom: -1.5rem;
+    height: 0.2rem;
+    background-color: chartreuse;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    transition-duration: 0.2s;
+    transition-property: transform;
+  }
+  
+  .custom-list-item a:hover::after {
+    visibility: visible;
+    transform: scaleX(1);
+  }
+  
+  .custom-list-item.selected a::after {
+    visibility: visible;
+    transform: scaleX(1);
+  }
+  .example-spacer {
+    flex: 1 1 auto;
+  }
+  .vishalPanchidiLogo{
+    margin-right: 0.5rem;
+    align-items: center;
+    display: flex;
+    svg {
+      transition: all 0.3s ease;
+    }
+  
+    circle {
+      fill: transparent;
+      stroke: white;
+      stroke-width: 0.25rem;
+    }
+  
+    text {
+      font-family: Arial, sans-serif;
+      font-size: 1rem;
+      text-anchor: middle;
+      dominant-baseline: central;
+      pointer-events: none;
+      fill: white;
+    }
+  
+    svg:hover {
+      transform: scale(1.5);
+    }
+  
+    svg:hover text {
+      animation: shake 0.5s 1;
+    }
+  
+    @keyframes shake {
+      0% { transform: translate(-2px, -2px); }
+      20% { transform: translate(2px, 2px); }
+      40% { transform: translate(-2px, -2px); }
+      60% { transform: translate(2px, 2px); }
+      80% { transform: translate(-2px, -2px); }
+      100% { transform: translate(0, 0);}
+    }
+
+  }

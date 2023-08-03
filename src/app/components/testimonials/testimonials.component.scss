@@ -1,0 +1,77 @@
+
+.home-title{
+    text-align: center;
+   .positionDetailsAdjustment{
+    display: flex;justify-content: center;margin-top: 2rem;
+   }
+    .title{
+        // font-size:tesclamp(1.8em,calc(1em + 2.4vw),3em) !important;
+        font-size: 4rem;
+        line-height: 4rem;
+        
+    color: #673ab7;
+    font-weight: bolder;
+    }
+    .sub-title{
+        font-size:1.7rem;
+        max-width: 54rem;
+        line-height: 2.5rem;
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+    
+}
+
+.home-wrapper{
+    padding-top: 6em;
+    padding-bottom: 4em;
+    @media (max-width: 767px) {
+    padding: 2rem;
+  }
+}
+.about-wrapper {
+    background-color: #efe8fc;
+}
+
+.testmonialblock {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+
+    .testimonial-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 3rem;
+        margin-right: 3rem;
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
+    .employerBlock {
+        width: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .alignEmployer {
+            text-align: center;
+        }
+    }
+
+    .employerReviewBlock {
+        min-height: 15rem;
+        width: 70%;
+        color: black;
+        background-color: #e9e0ff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        padding-right: 5rem;
+        padding-left: 5rem;
+        font-size: 1.5em;
+        line-height: 2rem;
+        font-weight: 100;
+    }
+}

@@ -1,0 +1,47 @@
+<!-- <p>testimonials works!</p> -->
+<div class="about-wrapper">
+  <div class="home-wrapper">
+    <div class="home-title">
+      <h1 class="title">{{testimonialData.testimonialTitle}}</h1>
+      <div class="positionDetailsAdjustment">
+        <p class="sub-title">{{testimonialData.testimonialSubtitle}}</p>
+      </div>
+    </div>
+  </div>
+
+
+  <div *ngFor="let item of testimonialData.testimonialDetails; let i = index" class="testmonialblock">
+    <div class="testimonial-wrapper">
+      <ng-container *ngIf="i % 2 === 0; else swapPositions">
+        <!-- Positions are not swapped -->
+        <div class="employerBlock">
+          <div class="alignEmployer">
+            <h1>{{item.personName}}</h1>
+            <h3>{{item.personPosition}}</h3>
+          </div>
+
+        </div>
+        <div class="employerReviewBlock">
+         {{item.message}}
+        </div>
+      </ng-container>
+
+      <ng-template #swapPositions>
+        <!-- Positions are swapped -->
+        <div class="employerReviewBlock">
+          {{item.message}}
+         </div>
+        <div class="employerBlock">
+          <div class="alignEmployer">
+            <h1>{{item.personName}}</h1>
+            <h3>{{item.personPosition}}</h3>
+          </div>
+
+        </div>
+
+
+
+      </ng-template>
+    </div>
+  </div>
+</div>

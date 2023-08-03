@@ -1,0 +1,44 @@
+<!-- <p>about works!</p> -->
+<div class="about-wrapper">
+
+  <div class="home-wrapper">
+    <div class="home-title">
+      <h1 class="title">{{aboutDetails.aboutTitle}}</h1>
+      <div class="positionDetailsAdjustment">
+        <p class="sub-title"></p>
+      </div>
+    </div>
+
+
+
+
+    <div class="footer-profile">
+
+      <div class="custom-image">
+        <img src="../../../../assets/home-assets/profile.jpg" alt="Example JPEG image" class="small-circle-image">
+
+      </div>
+      <div class="custom-message">
+        <p>
+          {{aboutDetails.aboutTitlDetail}}
+        </p>
+
+
+      </div>
+
+    </div>
+
+
+
+    <div class="aboutData">
+      <div>
+        <p class="details" *ngFor="let paragraph of splitIntoParagraphs(aboutDetails.aboutParagraphs)">
+          {{ paragraph }}
+        </p>
+      </div>
+
+    </div>
+
+
+  </div>
+</div>

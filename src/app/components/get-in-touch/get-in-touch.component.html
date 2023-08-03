@@ -1,0 +1,143 @@
+<!-- <p>get-in-touch works!</p> -->
+
+
+<div class="get-in-touch-wrapper">
+  <div>
+    <div class="home-wrapper">
+      <div class="home-title">
+        <h1 class="title">Get In Touch</h1>
+        <div class="positionDetailsAdjustment">
+          <p class="sub-title">Send a general message or details of a project you'd like me to be a part of and I'll get
+            back to you as soon as possible</p>
+        </div>
+      </div>
+    </div>
+    <div class="about-right-block">
+
+
+      <form class="custom-text" [formGroup]="form">
+        <div>
+          <mat-form-field appearance="outline" class="form-group form-adjustment">
+            <mat-label>Name</mat-label>
+            <input matInput formControlName="name" required>
+            <!-- <mat-error *ngIf="f.name.invalid && (f.name.dirty || f.name.touched)">
+                          Please enter a valid name.
+                        </mat-error> -->
+            <mat-error *ngIf="form.controls['name']?.errors">Name Required</mat-error>
+          </mat-form-field>
+        </div>
+        <div>
+          <mat-form-field appearance="outline" class="form-group form-adjustment">
+            <mat-label>Email</mat-label>
+            <input matInput formControlName="email" required>
+            <mat-error *ngIf="form.controls['email']?.errors">Valid Email Required</mat-error>
+
+          </mat-form-field>
+
+        </div>
+
+        <div>
+
+          <mat-form-field appearance="outline" class="form-group form-adjustment">
+            <mat-label>Website Link</mat-label>
+            <input matInput formControlName="websiteLink">
+          </mat-form-field>
+
+        </div>
+
+
+
+        <mat-checkbox formControlName="hireVishal">I WANT TO HIRE VISHAL</mat-checkbox>
+        <div>
+          <mat-form-field appearance="outline" class="form-adjustment">
+            <mat-label>General Message</mat-label>
+            <textarea matInput formControlName="message" required></textarea>
+            <!-- <mat-error *ngIf="form.controls['hireVishal']?.errors?.">Email Required</mat-error> -->
+
+          </mat-form-field>
+        </div>
+
+
+        <button mat-raised-button [disabled]="form.invalid" color="primary" type="submit"
+          (click)="onSubmit()">Submit</button>
+
+
+      </form>
+
+    </div>
+  </div>
+  <div>
+    <div class="porfile-wrapper">
+      <p class="about-title">About Vishal Panchidi</p>
+      <div class="footer-profile">
+        <div class="custom-image">
+          <img src="../../../../assets/home-assets/profile.jpg" alt="Example JPEG image" class="small-circle-image">
+        </div>
+        <div class="custom-message">
+          <p class="custom-paragraph-adjustment">
+            I am a Full-Stack Developer with 4 years commercial experience, author of CSS3 Foundations, and graduate of
+            Internet Technology. I create successful websites that are fast, easy to use, and built with best.
+          </p>
+
+
+        </div>
+
+      </div>
+      <div class="custom-message">
+        <p class="custom-paragraph-detail">
+          I am a Full-Stack Developer with 4 years commercial experience, author of CSS3 Foundations, and graduate of
+          Internet Technology. I create successful websites that are fast, easy to use, and built with best practices.
+        </p>
+
+
+      </div>
+    </div>
+    <div class="contact-details-wrapper">
+      <div class="">
+        <div class="contact-details">
+          <p class="contact-type">
+            Email:
+          </p>
+          <p class="contact-info"> vp8760@rit.edu
+          </p>
+
+        </div>
+        <div class="contact-details">
+          <p class="contact-type">
+            Tel:
+          </p>
+          <p class="contact-info">
+            +(585) 743 0203
+          </p>
+
+        </div>
+        <br>
+        <div>
+          <p class="availability-details">
+            Next available July 2023. Hire now.
+          </p>
+        </div>
+
+
+        <hr class="custom-line">
+
+        <p class="about-title">Non Professional Life</p>
+        <div>
+          <div class="non-professional-wrapper">
+            <img src="../../../assets/sneak-peak/WhatsApp Image 2023-07-02 at 5.53.40 AM.jpeg" alt="SVG Image">
+          </div>
+        </div>
+        <p class="custom-paragraph-detail">
+          If you're interested in getting a sneak peek into my personal life, click here. This section will give you a
+          glimpse of my hobbies and adventures, particularly my love for traveling. Join me on this exciting journey and
+          discover more about my interests outside of my professional endeavors. Stay tuned for captivating stories,
+          stunning photographs, and memorable experiences that have shaped my life. Let's embark on this virtual
+          exploration together! </p>
+
+      </div>
+    </div>
+
+
+
+  </div>
+</div>

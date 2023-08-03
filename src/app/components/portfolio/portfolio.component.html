@@ -1,0 +1,46 @@
+<div class="portfolio-wrapper">
+    <div class="home-wrapper">
+        <div class="home-title">
+            <h1 class="title">{{portfolioDetails.portfolioTitle}}</h1>
+            <div class="positionDetailsAdjustment">
+                <p class="sub-title">{{portfolioDetails.portfolioDetails}}</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div style="display: flex; justify-content: center;"></div> -->
+    <div *ngFor="let item of portfolioDetails.projectDetails" class="portfolio-grid">
+        
+        <div class="grid-left">
+            <div class="projectname-block">
+                <img [src]="item.projectLogo" style="width: 100%;
+                height: 100%;
+            " alt="">
+            
+            </div>
+
+            <div style="cursor: pointer;" (click)="ViewuserDetail(item.projectId,item.projectDetails)">
+                <br>
+                <h1 class="projectname-adjustment">
+                    {{item.projectName}}
+                </h1>
+                <div class="project-description-block">
+                    <p>
+                        {{item.projectDescription}}
+
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+        <div *ngIf="item.projectPhoto" class="grid-right">
+            <img [src]="item.projectPhoto" alt="SVG Image">
+        </div>
+    
+
+
+        <br>
+    </div>
+
+</div>

@@ -1,0 +1,67 @@
+.example-card {
+    max-width: 27rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    box-shadow: none;
+    background-color: #e9e0ff;
+}
+  
+.example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+}
+
+.home-title{
+    text-align: center;
+   .positionDetailsAdjustment{
+    display: flex;justify-content: center;margin-top: 2rem;
+   }
+    .title{
+        // font-size:tesclamp(1.8em,calc(1em + 2.4vw),3em) !important;
+        font-size: 4rem;
+        line-height: 4rem;
+    color: #673ab7;
+    font-weight: bolder;
+    }
+    .sub-title{
+        font-size:1.7rem;
+        max-width: 54rem;
+        line-height: 2.5rem;
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+    
+}
+.home-wrapper{
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+    background-color: #efe8fc;
+    @media (max-width: 767px) {
+    padding: 2rem;
+  }
+}
+.primaryRolesAdjustment{
+    display: flex; justify-content: center; margin-top: 3rem;
+    .primaryRolesImagesAdjustment{
+        display: flex; padding: 1.5rem 1rem;justify-content: center;
+        img{
+             max-width: 12rem;;
+        }
+    }
+    @media (max-width: 767px) {
+        flex-wrap: wrap;;
+    }
+}
+.titleAndDescriptionBlock{
+    text-align: center;
+    h3{
+    font-weight: bolder; font-size: 1.4rem;
+    }
+    p{
+        font-weight: 100;
+        font-size: 1.3rem;
+    line-height: 1.7rem;
+    
+    
+    }
+}

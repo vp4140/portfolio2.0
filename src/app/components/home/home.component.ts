@@ -25,7 +25,7 @@ export class HomeComponent implements OnInit {
           path:"assets/home-assets/backend.jpeg"
       },
       { title:"Mobile Application Development",
-          description:"Strong backend architecture built with authentications services and seamless flow betweeen database and frontend applications",
+          description:"Built IOS application in Swift and Snapkit with strong backend in nodejs.",
           path:"assets/home-assets/mobile.jpeg"
       }
       

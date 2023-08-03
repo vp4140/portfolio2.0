@@ -21,11 +21,14 @@
     <div class="view-webite-left" >
         <div class="view-website-wrapper" >
             <p class="view-website-paragraph" >
-                <a href="https://labops.igm.rit.edu/labops/" style="    color: white;"> View Website</a>
+                <a [href]="mainItem.projectUrl" target="_blank" style="    color: white;"> View Website</a>
            
         </p>
+            <ng-container *ngIf="mainItem.responsibilities">
+
+        
             <br>
-            <div class="responsibilities-block" >
+            <div  class="responsibilities-block" >
                         <div>
                             <p class="responsibilities-title" >TECH STACK</p>
                             <ul >
@@ -46,6 +49,8 @@
                         </div>
             
             </div>
+        </ng-container>
+        <ng-container *ngIf="mainItem.updates">
             <br>
             <div class="responsibilities-block" >
             <div>
@@ -60,6 +65,7 @@
             </div>
    
             </div>
+        </ng-container>
             <br>
             <!-- <div class="porfile-wrapper">
                
@@ -107,7 +113,7 @@
 
                 
                 </p>
-                <div class="description-img-block" >
+                <div *ngIf="item.subtitleImge" class="description-img-block" >
                     <img 
                 [src]="item.subtitleImge" 
                 alt="SVG Image">

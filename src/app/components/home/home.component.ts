@@ -12,7 +12,7 @@ export class HomeComponent implements OnInit {
   }
   homeDetails = {
     position: "Successful Full-Stack Developer",
-    positionDetails: `Hi. I’m Vishal Panchidi, a freelance Front-end Developer with 4 years commercial experience
+    positionDetails: `Hi. I’m Vishal Panchidi, a freelance Full-Stack Developer with 4 years commercial experience
     creating successful
     websites.`,
     primaryRoles:[

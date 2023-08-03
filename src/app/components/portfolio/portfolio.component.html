@@ -19,7 +19,7 @@
             
             </div>
 
-            <div (click)="ViewuserDetail(item.projectId,item.projectDetails)">
+            <div style="cursor: pointer;" (click)="ViewuserDetail(item.projectId,item.projectDetails)">
                 <br>
                 <h1 class="projectname-adjustment">
                     {{item.projectName}}
@@ -34,7 +34,7 @@
             </div>
 
         </div>
-        <div class="grid-right">
+        <div *ngIf="item.projectPhoto" class="grid-right">
             <img [src]="item.projectPhoto" alt="SVG Image">
         </div>
     

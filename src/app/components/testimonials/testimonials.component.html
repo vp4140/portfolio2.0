@@ -16,25 +16,25 @@
         <!-- Positions are not swapped -->
         <div class="employerBlock">
           <div class="alignEmployer">
-            <h1>{{item.companyName}}</h1>
-            <h3>{{item.employeeName}}</h3>
+            <h1>{{item.personName}}</h1>
+            <h3>{{item.personPosition}}</h3>
           </div>
 
         </div>
         <div class="employerReviewBlock">
-         {{item.employeeReview}}
+         {{item.message}}
         </div>
       </ng-container>
 
       <ng-template #swapPositions>
         <!-- Positions are swapped -->
         <div class="employerReviewBlock">
-          {{item.employeeReview}}
+          {{item.message}}
          </div>
         <div class="employerBlock">
           <div class="alignEmployer">
-            <h1>{{item.companyName}}</h1>
-            <h3>{{item.employeeName}}</h3>
+            <h1>{{item.personName}}</h1>
+            <h3>{{item.personPosition}}</h3>
           </div>
 
         </div>

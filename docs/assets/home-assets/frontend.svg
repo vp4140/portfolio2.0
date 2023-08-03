@@ -1,0 +1,38 @@
+  <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+                            <rect x="40" y="30" width="160" height="170" rx="10" ry="10" fill="#8C63A8"/>
+                            <rect x="50" y="40" width="100" height="10" rx="2" ry="2" fill="#D1B2E1"/>
+                            <rect x="50" y="55" width="100" height="10" rx="2" ry="2" fill="#D1B2E1"/>
+                            <rect x="50" y="70" width="70" height="10" rx="2" ry="2" fill="#D1B2E1"/>
+                            <rect x="50" y="85" width="70" height="10" rx="2" ry="2" fill="#D1B2E1"/>
+                            <rect x="50" y="100" width="100" height="10" rx="2" ry="2" fill="#D1B2E1"/>
+                            <rect x="50" y="115" width="100" height="10" rx="2" ry="2" fill="#D1B2E1"/>
+                            <rect x="50" y="130" width="100" height="10" rx="2" ry="2" fill="#D1B2E1"/>
+                            <rect x="50" y="145" width="100" height="10" rx="2" ry="2" fill="#D1B2E1"/>
+                            <rect x="50" y="160" width="100" height="10" rx="2" ry="2" fill="#D1B2E1"/>
+                            <circle cx="80" cy="60" r="3" fill="#E6D7FF"/>
+                            <circle cx="80" cy="75" r="3" fill="#E6D7FF"/>
+                            <circle cx="80" cy="90" r="3" fill="#E6D7FF"/>
+                            <circle cx="80" cy="105" r="3" fill="#E6D7FF"/>
+                            <circle cx="80" cy="120" r="3" fill="#E6D7FF"/>
+                            <circle cx="80" cy="135" r="3" fill="#E6D7FF"/>
+                        </svg> -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <g transform="translate(20, 15)">
+    <rect x="40" y="30" width="160" height="170" rx="10" ry="10" fill="#8C63A8"/>
+    <rect x="50" y="40" width="100" height="10" rx="2" ry="2" fill="#D1B2E1"/>
+    <rect x="50" y="55" width="100" height="10" rx="2" ry="2" fill="#D1B2E1"/>
+    <rect x="50" y="70" width="70" height="10" rx="2" ry="2" fill="#D1B2E1"/>
+    <rect x="50" y="85" width="70" height="10" rx="2" ry="2" fill="#D1B2E1"/>
+    <rect x="50" y="100" width="100" height="10" rx="2" ry="2" fill="#D1B2E1"/>
+    <rect x="50" y="115" width="100" height="10" rx="2" ry="2" fill="#D1B2E1"/>
+    <rect x="50" y="130" width="100" height="10" rx="2" ry="2" fill="#D1B2E1"/>
+    <rect x="50" y="145" width="100" height="10" rx="2" ry="2" fill="#D1B2E1"/>
+    <rect x="50" y="160" width="100" height="10" rx="2" ry="2" fill="#D1B2E1"/>
+    <circle cx="80" cy="60" r="3" fill="#E6D7FF"/>
+    <circle cx="80" cy="75" r="3" fill="#E6D7FF"/>
+    <circle cx="80" cy="90" r="3" fill="#E6D7FF"/>
+    <circle cx="80" cy="105" r="3" fill="#E6D7FF"/>
+    <circle cx="80" cy="120" r="3" fill="#E6D7FF"/>
+    <circle cx="80" cy="135" r="3" fill="#E6D7FF"/>
+  </g>
+</svg>

@@ -28,9 +28,9 @@ export class PortfolioComponent {
         {
           projectId: 1,
           projectName: "Lab Operation Systems",
-          projectLogo:" assets/portfolio/GCCIS/gccis-logo.jpeg",
+          projectLogo:"assets/portfolio/GCCIS/gccis-logo.jpeg",
           projectDescription: `Labops stands as a testament to innovation and efficiency, enhancing the academic experience for all stakeholders at RIT. From fostering interactive learning environments with dynamic displays to empowering students and employees with flexible shift management, Labops covers every aspect of campus life. It's commitment to student success is further bolstered through features that promote academic support and streamlined equipment management.`,
-          projectPhoto: " assets/portfolio/GCCIS/gccis-office.jpeg",
+          projectPhoto: "assets/portfolio/GCCIS/gccis-office.jpeg",
           // portfolio-website/src/assets/
           projectDetails: {
             projectName: "LabOps Systems",
@@ -45,7 +45,7 @@ export class PortfolioComponent {
               {
                 subTitle: "Project Details",
                 subTitleDetail: "Labops stands as a testament to innovation and efficiency, enhancing the academic experience for all stakeholders at RIT. From fostering interactive learning environments with dynamic displays to empowering students and employees with flexible shift management, Labops covers every aspect of campus life. It's commitment to student success is further bolstered through features that promote academic support and streamlined equipment management.",
-                subtitleImge: " assets/portfolio/GCCIS/gccis-landing-page.jpeg",
+                subtitleImge: "assets/portfolio/GCCIS/gccis-landing-page.jpeg",
                 moreDetail: "Our lab displays serve as a crucial source of information for students at RIT. Here, you can find the latest updates on lab hours, special events, tutoring schedules, and engaging slideshows. To ensure smooth operations, we follow these simple guidelines for managing the displays",
                 testimonial: [{
                   message: "Not only is Vishal's work on-time and to spec, he pays attention to improve the aesthetics of the site as well as the functionality. Throughout the entire process he is responsive, and willing to work through issues as they arise. It's obvious he takes tremendous pride in his work, and I wouldn't hesitate to recommend or work with him again.",
@@ -56,7 +56,7 @@ export class PortfolioComponent {
               {
                 subTitle: "Display Schedules - Fostering Interactive Learning Environments",
                 subTitleDetail: `Labops understands the importance of creating interactive learning environments, and our 'Display Schedules' feature is the perfect tool to achieve this. Professors and faculty members can easily access the feature through their Labops accounts. Once logged in, they are greeted with a user-friendly interface that allows them to browse through an extensive media gallery, containing images, videos, and interactive content. When planning seminars or lectures, educators can handpick media elements from the gallery that complement their teaching style and subject matter. These media items can range from eye-catching welcome messages to detailed lecture schedules with topic highlights. The options are limitless, allowing instructors to personalize their presentations and captivate students' attention from the moment they step into the classroom.`,
-                subtitleImge: " assets/portfolio/GCCIS/display-schedule.jpeg",
+                subtitleImge: "assets/portfolio/GCCIS/display-schedule.jpeg",
                 moreDetail:"Labops enables faculty members to seamlessly broadcast their selected media to monitors situated strategically across the campus. These monitors are strategically placed in common areas, lecture halls, and seminar rooms, ensuring that students are constantly engaged with important announcements, upcoming events, and course schedules.",
 
 
@@ -64,7 +64,7 @@ export class PortfolioComponent {
               {
                 subTitle: "Shift Management - Empowering Tech Workers and Students",
                 subTitleDetail: `Labops goes beyond traditional academic features to cater to the needs of the tech-savvy student population and employees at RIT. With our comprehensive "Shift Management" tool, students who work on-campus, as well as other employees, can effortlessly manage their work shifts, fostering a flexible and efficient work environment.`,
-                subtitleImge: " assets/portfolio/GCCIS/shift-management.jpeg",
+                subtitleImge: "assets/portfolio/GCCIS/shift-management.jpeg",
                 moreDetail:`Using their Labops accounts, students and employees can easily view their existing shifts and release them when necessary. This opens up opportunities for others seeking extra work hours or looking to fill in specific shifts. Labops optimizes the shift assignment process by cross-referencing the availability of students with their academic schedules, ensuring that work shifts do not clash with crucial classes or academic commitments.
 Through our user-friendly interface, students and employees can also indicate their availability for additional shifts, making it easier for administrators to fill vacancies when required. This streamlined approach benefits both students seeking work opportunities and the university's administrative team responsible for workforce management.`
 
@@ -76,7 +76,7 @@ Through our user-friendly interface, students and employees can also indicate th
                 This feature provides a convenient platform for students to communicate their needs while adhering to RIT's standards and regulations. The submitted time change requests are then directed to authorized administrators who can access a secure and dedicated page.
                 
                 `,
-                subtitleImge: " assets/portfolio/GCCIS/time-card.jpeg",
+                subtitleImge: "assets/portfolio/GCCIS/time-card.jpeg",
                 moreDetail:`On this page, administrators can efficiently review and process time change requests, ensuring compliance with university policies. They have the option to edit and approve the requests, facilitating seamless adjustments to students' work hours while maintaining fair and equitable practices across the board.`
 
               }, 
@@ -85,7 +85,7 @@ Through our user-friendly interface, students and employees can also indicate th
                 subTitleDetail: `Labops recognizes the vital role tutoring centers play in supporting students' academic journeys. To optimize this crucial academic support, Labops has developed an innovative "Tutoring Center Management" feature.
 
                 Tutoring center staff can easily access the feature, which provides real-time tracking of students visiting the centers for academic assistance. The intuitive interface displays the number of students currently in tutoring sessions, the number of students waiting for help, and the availability of tutors.`,
-                subtitleImge: " assets/portfolio/GCCIS/tutoring.jpeg",
+                subtitleImge: "assets/portfolio/GCCIS/tutoring.jpeg",
                 moreDetail:`Tutors can utilize Labops to add valuable notes to individual student profiles, helping them keep track of progress, identify areas of improvement, and provide personalized support tailored to each student's needs. This data-driven approach empowers tutors to deliver more effective and targeted assistance, contributing to enhanced student learning outcomes.`
 
               },
@@ -94,7 +94,7 @@ Through our user-friendly interface, students and employees can also indicate th
                 subTitleDetail: `At the core of Labops' commitment to academic excellence is the sophisticated "Inventory System" designed specifically for the Computer Science department. Understanding the importance of proper equipment management, Labops provides a seamless process for students and faculty to request required equipment.
 
                 With just a few clicks, students and faculty members can submit their equipment requests through their Labops accounts. Lab workers, responsible for approving and assigning equipment, receive notifications about pending requests and can efficiently review and grant approvals based on availability and usage policies.`,
-                subtitleImge: " assets/portfolio/GCCIS/inventory.jpeg",
+                subtitleImge: "assets/portfolio/GCCIS/inventory.jpeg",
                 moreDetail:`Labops' inventory system allows the Computer Science department to maintain accurate and up-to-date records of equipment distribution and utilization. This comprehensive tracking ensures that equipment is readily available for students' academic and research needs, eliminating unnecessary delays and maximizing the department's resources.
 
                 The system also enables easy equipment retrieval and reassignment, facilitating efficient inventory management and preventing unnecessary costs associated with misplaced or unaccounted-for items.`
@@ -109,7 +109,7 @@ Through our user-friendly interface, students and employees can also indicate th
         {
           projectId: 2,
           projectName: "Morgan Stanley Wealth Management",
-          projectLogo: " assets/portfolio/Morgan-stanley/morgan-stanley-logo.jpeg",
+          projectLogo: "assets/portfolio/Morgan-stanley/morgan-stanley-logo.jpeg",
           projectDescription: `As a web developer at Morgan Stanley Private Wealth Management, I play a pivotal role in delivering a cutting-edge digital experience that complements our client-centric approach to wealth management. Leveraging my expertise in Angular, C#, and microservices, I collaborate with a team of dedicated professionals to create bespoke solutions that cater to the unique needs of our esteemed clients. By combining the vast resources of a globally trusted financial services firm with the personalized touch of an investment boutique, our platform empowers families, foundations, and individuals to effectively manage the diverse aspects of their wealth and build a lasting legacy.`,
           projectPhoto: "assets/portfolio/Morgan-stanley/morgan-stanley-office.jpeg",
           projectDetails: {
@@ -147,10 +147,10 @@ Through our user-friendly interface, students and employees can also indicate th
         },
         {
           projectId: 3,
-          projectLogo:" assets/portfolio/TCS/tcs-logo.jpeg",
+          projectLogo:"assets/portfolio/TCS/tcs-logo.jpeg",
           projectName: "Tata Consultancy Services",
           projectDescription: "Succeed online with a website that is fast, easy to use, and built with best practices and a passion for design. Succeed online with a website that is fast, easy to use, and built with best practices and a passion for design. Succeed online with a website that is fast, easy to use, and built with best practices and a passion for design. Succeed online with a website that is fast, easy to use, and built with best practices and a passion for design. Succeed online with a website that is fast, easy to use, and built with best practices and a passion for design.end",
-          projectPhoto: " assets/portfolio/TCS/tcs-office.avif",
+          projectPhoto: "assets/portfolio/TCS/tcs-office.avif",
           projectDetails: {
             projectName: "Systems Engineer",
             projectGoal: "Was Introduced to the world of application and product development and contributed to the successful design of a comprehensive web and mobile interfaces.",
@@ -158,7 +158,7 @@ Through our user-friendly interface, students and employees can also indicate th
               {
                 subTitle: "Overall experience with Tata consultany services",
                 subTitleDetail: "My journey began at TCS, where I had the privilege of learning and growing in the world of application and web development. Joining the company with zero industry experience, I was fortunate to be surrounded by supportive and knowledgeable colleagues who generously answered even my silliest questions, helping me evolve into the developer I am today. I started my career working on iOS development for Melbourne waters, delving into the realm of mobile applications. Later, I transitioned to web development, where I honed my skills in Java, React, and Node.js, crafting innovative and efficient web applications. This journey has been a continuous adventure of exploring new technologies and embracing challenges.",
-                subtitleImge: " assets/portfolio/TCS/clients-grid.jpeg",
+                subtitleImge: "assets/portfolio/TCS/clients-grid.jpeg",
                 moreDetail: `During my tenure at TCS, I had the incredible opportunity to work with numerous international companies as a software developer. Collaborating with clients from diverse backgrounds and industries exposed me to a wide array of projects and challenges. Through these experiences, I not only sharpened my technical expertise but also developed strong communication and collaboration skills. Working in an international setting taught me the importance of adaptability, as I had to tailor solutions to meet the unique requirements of each client. These experiences have undoubtedly enriched my understanding of global business practices and allowed me to contribute to the success of various ventures on a global scale. As I look back on my journey, I am grateful for the invaluable exposure and growth I gained from working with such esteemed international clients.
                 `,
                 testimonial: [{

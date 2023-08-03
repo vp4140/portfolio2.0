@@ -18,7 +18,7 @@ export class HomeComponent implements OnInit {
     primaryRoles:[
       {   title:"Frontend Development",
           description:"Responsive websites built for an optimal user experience that achieves your business goals",
-          path:"../../../assets/home-assets/frontend.jpeg"
+          path:"assets/home-assets/frontend.jpeg"
   
       },{ title:"Backend Development",
           description:"Storong backend architecturen built with authentications services and semless flow betweeen database and frontend applications",

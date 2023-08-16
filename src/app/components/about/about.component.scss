@@ -5,10 +5,10 @@
  }
   .title{
       // font-size:tesclamp(1.8em,calc(1em + 2.4vw),3em) !important;
-      font-size: 4em;
-      
-  color: #673ab7;
-  font-weight: bolder;
+      font-size: 4rem;
+    line-height: 4rem;
+    color: #673ab7;
+    font-weight: bolder;
   }
   .sub-title{
     font-size: 2rem;
@@ -22,7 +22,10 @@
 .home-wrapper{
     padding-top: 6em;
     padding-bottom: 4em;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
+
 
 .footer-profile{
     display: flex;

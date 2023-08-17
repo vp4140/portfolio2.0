@@ -28,9 +28,12 @@
 .about-right-block {
   background-color: #e9e0ff;
   width: 80%;
+  
   margin: 3rem;
   padding: 2rem;
-
+  @media (max-width: 767px) {
+    width: unset
+    }
   .form-adjustment {
     width: 100%;
   }

@@ -10,12 +10,14 @@
   .custom-list-item {
     display: inline-block;
     margin-right: 2rem;
+    font-size: 1.2rem;
   }
   
   .custom-list-item a {
     position: relative;
     text-decoration: none;
     color: white;
+    font-size: 1.2rem;
   }
   
   .custom-list-item a::after {
@@ -85,4 +87,10 @@
       100% { transform: translate(0, 0);}
     }
 
+  }
+
+  .vishalPanchidiName{
+    @media (max-width: 767px) {
+      display: none;
+    }
   }

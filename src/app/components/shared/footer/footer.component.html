@@ -5,7 +5,7 @@
   <div class ="footer-main-content">
     <div class="footer-profile">
       <div class="custom-image">
-        <img src="../../../../assets/home-assets/profile.jpg" alt="Example JPEG image" class="small-circle-image">
+        <img src="assets/home-assets/profile.jpg" alt="Example JPEG image" class="small-circle-image">
       </div>
       <div class="custom-message">
         <p>
@@ -66,10 +66,11 @@
 
     <div class="footer-content">
       <ul class="footer-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Contact</a></li>
+       
+        <li><a (click)="openPortfolio('')" > Home</a></li>
+        <li><a  (click)="openPortfolio('portfolio')" >Portfolio </a></li>
+        <li ><a (click)="openPortfolio('about')">About</a></li>
+        <li ><a (click)="openPortfolio('testimonials')">Testimonials</a></li>
       </ul>
       <div class="footer-logo">
         <!-- <img src="logo.png" alt="Logo"> -->

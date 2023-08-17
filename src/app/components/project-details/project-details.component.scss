@@ -3,7 +3,7 @@
    
     .title{
         // font-size:tesclamp(1.8em,calc(1em + 2.4vw),3em) !important;
-        font-size: 4em;
+        font-size: 4rem;
         
     color: #673ab7;
     font-weight: bolder;
@@ -41,9 +41,15 @@
 .view-webite-left {
   display: flex;
   justify-content: center;
+  @media (max-width: 767px) {
+    flex-wrap: wrap;
+  }
 
   .view-website-wrapper {
     width: 20%;
+    @media (max-width: 767px) {
+      width: 80%;
+    }
 
     .view-website-paragraph {
       height: 4rem;
@@ -80,11 +86,13 @@
     list-style-type: disc;
     li{
       font-weight: 500;
+      font-size: 1.5rem;
     }
   }
 }
 .update-block{
-  margin-top: 2rem;margin-bottom: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   .update-date{
     font-weight: 700;
   }
@@ -94,6 +102,7 @@
 }
 .project-details-right{
   margin-left: 3rem;
+  margin-right: 3rem;
   .project-details-right-block{
     margin-bottom: 5rem;
     .project-title{
@@ -133,7 +142,7 @@
                     align-items: center;
                     justify-content: center;
                     padding: 2rem;
-                    font-size: 1.5em;
+                    font-size: 1.5rem;
                   
                     display: flex;
                     font-size: 1.2rem;

@@ -30,6 +30,7 @@ import { ArticleDetailsComponent } from './components/article-details/article-de
 import { ProfileBlockComponent } from './components/profile-block/profile-block.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -61,9 +62,7 @@ import { ProfileBlockComponent } from './components/profile-block/profile-block.
     MatFormFieldModule,
     MatCheckboxModule,
     BrowserAnimationsModule,
-    HttpClientModule
-    
-    //  MatIconModule
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -45,14 +45,20 @@
         margin-right: 3rem;
         padding-left: 5rem;
         padding-right: 5rem;
+        @media (max-width: 767px) {
+        flex-wrap: wrap;
+        }
     }
+   
 
     .employerBlock {
         width: 30%;
         display: flex;
         align-items: center;
         justify-content: center;
-
+        @media (max-width: 767px) {
+            width: 100%;
+            }
         .alignEmployer {
             text-align: center;
         }
@@ -70,7 +76,7 @@
         padding-bottom: 2rem;
         padding-right: 5rem;
         padding-left: 5rem;
-        font-size: 1.5em;
+        font-size: 1.2rem;
         line-height: 2rem;
         font-weight: 100;
     }
